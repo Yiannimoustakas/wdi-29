@@ -53,6 +53,9 @@ for( let i = 0; i < 10; i++ ){
 // Call that function for a few different scores and log the result to make sure it works.
 
 const assignGrade = function( score ){
+
+  // First attempt, using a grade variable:
+  //
   // let grade = '';
   // if( score >= 90 ){
   //   grade = 'A';
@@ -65,8 +68,10 @@ const assignGrade = function( score ){
   // } else {
   //   grade = 'F';
   // }
-  // let grade = '';
+  //
+  // return grade;
 
+  // Second attempt, returning the correct value immediately:
   if( score >= 90 ){
     return 'A';
   } else if( score >= 80 ){
@@ -79,22 +84,6 @@ const assignGrade = function( score ){
     return 'F';
   }
 
-
-  // if( score >= 90 ){
-  //   return 'A';
-  // }
-  // if( score >= 80 ){
-  //   return 'B';
-  // }
-  // if( score >= 70 ){
-  //   return 'C';
-  // }
-  // if( score >= 60 ){
-  //   return 'D'
-  // }
-  return 'F';
-
-  // return grade;
 };
 
 console.log(assignGrade(95));
