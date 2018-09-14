@@ -73,11 +73,32 @@ const favouriteMovie = {
   title: 'Inherent Vice',
   duration: 125,
   stars: ['Joaquim Phoenix', 'Josh Brolin', 'Owen Wilson'],
-  movieInfo: function(){
+  printInfo: function(){
+    // 'this' refers to the object which this function is inside of (the object this function is a method of)
     console.log(`${this.title} lasts for ${this.duration} minutes.`);
     console.log(`Stars: ${ this.stars.join(', ') }.`);
   }
 };
 
 
-// movieInfo( favouriteMovie );
+const movieInfo = function( movie ){
+  console.log('=========== Movie Info ==============');
+  console.log(`${ movie.title } lasts for ${ movie.duration } minutes.`);
+  console.log(`Stars: ${ movie.stars.join(', ') }`);
+};
+
+movieInfo( favouriteMovie );  // pass a movie into the standalone info function
+
+// The movieInfo function expects to be passed an object with a 'title' property which is a string,
+// a 'duration' property which is an integer, and a 'stars' property which is an array of strings.
+// Instead of passing it a variable containing such an object, as we've done above, we can also
+// just create an object 'on the fly', at the last moment, i.e. define an object literal right inside
+// the parentheses of the call to movieInfo(), as long as it has the expected   properties:
+movieInfo({
+  title: 'Pineapple Express',
+  duration: 420,
+  stars: ['Seth Rogen', 'James Franco']
+});
+
+
+favouriteMovie.printInfo();   // use the built-in function (method) of the object
