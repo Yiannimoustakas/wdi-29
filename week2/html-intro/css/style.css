@@ -1,0 +1,47 @@
+
+body {
+  background-color: lavender;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+img:hover{
+  max-width: 10px;
+}
+
+#content {
+  /* Any p tags which are inside an element with the ID of 'content' will get these styles: */
+  font-family: "Comic Sans MS", serif;
+}
+
+div, p {
+  border: 1px solid red;
+}
+
+#firstPara {
+  background-color: green;
+  font-family: Arial;
+}
+
+img.bordered {
+  border: 3px dashed orange;
+  max-width: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+h1 {
+  color: hotpink;
+  background-color: brown;
+  font-family: "comic sans ms";
+  margin-bottom: 40px;
+}
