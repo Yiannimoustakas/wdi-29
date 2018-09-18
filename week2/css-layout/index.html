@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>CSS Positioning</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <nav>
+       <div id="left">HOME | USERS | NEW POST</div><div id="right">
+         LOGOUT
+       </div>
+    </nav>
+
+   <div id="container">
+
+      <h1>CSS Positioning Hijinx</h1>
+
+      <h3>Animation</h3>
+
+      <img id="bill" src="http://fillmurray.com/400/400">
+
+      <br>
+
+      <div class="box animated">Animated</div>
+
+      <h3>Position example</h3>
+
+      <div class="box staticExample">Static (default)</div>
+
+      <div class="box relativeExample">Relative</div>
+
+      <div id="second" class="box relativeExample">Relative</div>
+
+      <div class="box parentOfAbsolute">
+        parentOfAbsolute
+        <div class="box absoluteExample">Absolute child 1</div>
+        <div class="box absoluteExample secondAbs">Absolute child 2</div>
+      </div>
+
+
+      <div class="box fixedExample">Fixed</div>
+
+
+
+
+     <hr>
+
+      <h3>Display example</h3>
+
+
+      <div class="inlineExample">This element is <code>display: inline;</code></div>
+      <div class="inlineExample">This element is also inline, so it sits next to its neighbouring inline element.</div>
+
+      <br><br>
+
+      <div class="blockExample">This is a <code>display: block;</code> element.</div><div class="blockExample">This is another block element. It won't sit next to its neighbour.</div>
+
+     <br><br>
+
+     <div class="inlineBlockExample">
+       <!-- Just writing the contents of the div on separate lines for readability! -->
+       This is a <code>display: inline-block;</code> element.
+     </div>
+     <div class="inlineBlockExample">
+       This is another <code>inline-block</code> element. They will sit next to each other, and you can change their width &amp; height.
+     </div>
+
+   </div><!-- #container -->
+
+  </body>
+
+
+</html>
