@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Books</title>
+</head>
+<body>
+   <h1>My Books</h1>
+  <script>
+  const books = [
+    {
+      title: 'The Design of EveryDay Things',
+      author: 'Don Norman',
+      alreadyRead: false,
+      coverImage: 'http://placekitten.com/200/200'
+    },
+    {
+      title: 'The Most Human Human',
+      author: 'Brian Christian',
+      alreadyRead: true,
+      coverImage: 'http://placekitten.com/300/300'
+    }
+  ];
+
+//   Iterate through the array of books. For each book, create a p element with the book title and author and append it to the page.
+// Bonus: Use a ul and li to display the books.
+// Bonus: add a property to each book with the URL of the book cover, and add an img element for each book on the page.
+// Bonus: Change the style of the book depending on whether you have read it or not.
+
+  const bookList = document.createElement('ul');
+
+  for( let i = 0; i < books.length; i++ ){
+    const currentBook = books[i];
+    // const pTag = document.createElement('p');
+    // pTag.innerHTML = `Title: <strong>${ currentBook.title }</strong>, Author: ${ currentBook.author }`;
+    // document.body.appendChild( pTag );
+
+    const li = document.createElement('li');
+    li.innerHTML = `Title: <strong>${ currentBook.title }</strong>, Author: ${ currentBook.author }`;
+
+    const img = document.createElement('img');
+    img.src = currentBook.coverImage;
+    li.appendChild( img );  // add the image tag to the <li> we are building
+
+    bookList.appendChild( li );  // add the new <li> tag the <ul> tag we created above the loop
+  }
+
+  document.body.appendChild( bookList );
+
+  </script>
+</body>
+</html>

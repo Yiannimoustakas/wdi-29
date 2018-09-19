@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+  <style>
+    .listitem{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>About Me</h1>
+
+  <button id="specialButton">Click me!</button>
+
+  <ul>
+    <li>Nickname: <span id="nickname"></span></li>
+    <li>Favorites:  <span id="favorites"></span></li>
+    <li>Hometown: <span id="hometown"></span></li>
+   </ul>
+
+ <script>
+ // (In JS) Change the body tag's style so it has a font-family of "Arial, sans-serif".
+ // (In JS) Replace each of the spans (nickname, favorites, hometown) with your own information.
+ // Iterate through each li and change the class to "listitem". Add a style tag that sets a rule for "listitem" to make the color red.
+ // Create a new img element and set its src attribute to a picture of you. Append that element to the page.
+
+  // const body = document.querySelector('body');
+  // const body = document.body;
+  // console.log( body );
+
+  document.body.style.fontFamily = 'Arial, sans-serif';
+
+  const nickname = document.getElementById('nickname');
+  nickname.innerHTML = 'textchimp';
+
+  const favourites = document.querySelector('#favorites');
+  favourites.innerHTML = 'Novia Scotia Duck-Tolling Retriever, Pug';
+
+  document.querySelector('#hometown').innerHTML = 'Sydney bro';   // one-liner, no variable
+
+  const listItems = document.querySelectorAll('li');
+
+  for( let i = 0; i < listItems.length; i++ ){
+    const item = listItems[i];
+    item.className = 'listitem';
+    // listItems[i].className = 'listitem';      // one-liner
+  }
+
+  const newImage = document.createElement('img');
+  newImage.src = 'http://fillmurray.com/400/300';
+
+  document.body.appendChild( newImage );
+
+  const button = document.querySelector('#specialButton');
+
+  const iWasClicked = function(){
+    console.log('I was just clicked!');
+  };
+
+  button.addEventListener('click', iWasClicked);
+
+  button.addEventListener('click', function(event){
+    console.log('The second (anonymous) event callback is running!')
+    console.log('Event data:', event);
+    console.log('Time:', event.timeStamp);
+    console.log('Mouse position:', event.clientX, event.clientY);
+  });
+
+
+ </script>
+ </body>
+</html>
