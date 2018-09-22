@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://www.teaching-materials.org/_deprecated/jquery/youtube_doc -->
+<html lang="en"><script>(function installFakeGeolocationCode() {
+        var timerId = null;
+        if (!navigator.geolocation) {
+            return;
+        }
+        navigator.geolocation.getCurrentPosition_ = navigator.geolocation.getCurrentPosition;
+        navigator.geolocation.watchPosition_ = navigator.geolocation.watchPosition;
+        navigator.geolocation.clearWatch_ = navigator.geolocation.clearWatch;
+
+        navigator.geolocation.clearWatch = function (id) {
+            window.clearInterval(id);
+        };
+
+        function sendBackResponse (successCb, errorCb, options, jsonedResponse) {
+            var response = JSON.parse(jsonedResponse);
+            if (response.isEnabled) {
+                successCb({ 'coords': { 'latitude': response.lat, 'longitude': response.lng,
+                    'accuracy': response.accuracy }, 'timestamp': new Date().getTime() });
+            } else {
+                navigator.geolocation.getCurrentPosition_(successCb, errorCb, options);
+            }
+        }
+
+        function createGetFakePosition(successCb, errorCb, options) {
+            return function () {
+                var positionElement = document.getElementById('fake_position_meta');
+                if (!positionElement) {
+                    var interval = setInterval(function() {
+                        positionElement = document.getElementById('fake_position_meta');
+                        if (positionElement) {
+                            clearInterval(interval);
+                            sendBackResponse(successCb, errorCb, options, positionElement.getAttribute('content'));
+                        }
+                    }, 200 /* ms */);
+                } else {
+                    // we already have the div, no need for intervals etc.
+                    sendBackResponse(successCb, errorCb, options, positionElement.getAttribute('content'));
+                }
+            };
+        };
+
+        navigator.geolocation.getCurrentPosition = function (cb1, cb2, options) {
+            var getFakePosition = createGetFakePosition(cb1, cb2, options);
+            getFakePosition();
+        };
+
+        navigator.geolocation.watchPosition = function (cb1, cb2, options) {
+            var getFakePosition = createGetFakePosition(cb1, cb2, options);
+            getFakePosition();
+            if (timerId) {
+                window.clearInterval(timerId);
+            }
+            timerId = window.setInterval(getFakePosition, 5 * 1000);
+            return timerId;
+        };
+    })();</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>youtube.js Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="./youtube.js.documentation_files/bootstrap.css" rel="stylesheet">
+    <script>
+      $(document).ready(function(){
+        $('pre').addClass('prettyprint').attr('tabIndex', 0);
+        prettyPrint();
+      });
+    </script>
+  <link id="noteanywherecss" media="screen" type="text/css" rel="stylesheet" href="data:text/css,.note-anywhere%20.closebutton%7Bbackground-image%3A%20url%28chrome-extension%3A//bohahkiiknkelflnjjlipnaeapefmjbh/asset/deleteButton.png%29%3B%7D%0A"></head>
+
+  <body>
+    <div class="container">
+      <h2>youtube.js Documentation</h2>
+      <p><a href="http://en.wikipedia.org/wiki/JavaScript_library">Wikipedia</a>: "A <strong>JavaScript library</strong> is a library of pre-written JavaScript which allows for easier development of JavaScript-based applications."</p>
+
+      <p><a href="http://jquery.com/">jQuery</a> is an example of a popular library today. youtube.js is another example of a library, written by Pamela Fox, that contains pre-written JavaScript that you can use.</p>
+
+      <p>In the youtube.js library, there are four functions you can use:</p>
+
+      <ol>
+        <li>
+          <strong>Get the Video ID from a Video URL</strong><br>
+          <br>
+          Syntax:
+          <pre>youtube.getIdFromUrl(videoUrlOrID)</pre>
+          Expects an argument (videoUrlOrID) that is either a youtube video URL or a video ID and returns back the video's ID.
+          <br>
+          <br>
+          Example:
+          <pre>var vid_id = youtube.getIdFromUrl('http://www.youtube.com/watch?v=epUk3T2Kfno');
+//vid_id equals 'epUk3T2Kfno' (notice where the ID is in the original url)</pre>
+          <br>
+        </li>
+        <li>
+          <strong>Generate a Thumbnail URL from a Video URL</strong><br>
+          <br>
+          Syntax:
+          <pre>youtube.generateThumbnailUrl(videoUrlOrID)</pre>
+          Expects an argument (videoUrlOrID) that is either a youtube URL or a ID and returns back the URL of the thumbnail for that video.
+          <br>
+          <br>
+          Example:
+          <pre>var vid_thumbnail = youtube.generateThumbnailUrl('http://www.youtube.com/watch?v=epUk3T2Kfno');
+//vid_thumbnail equals 'http://i3.ytimg.com/vi/epUk3T2Kfno/default.jpg' (notice how the video's ID is inserted in the middle of the image url)</pre>
+          <br>
+        </li>
+        <li>
+          <strong>Generate the URL to Watch a Video from the Video ID</strong><br>
+          <br>
+          Syntax:
+          <pre>youtube.generateWatchUrl(videoUrlOrID)</pre>
+          Expects an argument (videoUrlOrID) that is either a youtube URL or a ID and returns back the URL for that video.
+          <br>
+          <br>
+          Example:
+          <pre>var vid_watch = youtube.generateWatchUrl('epUk3T2Kfno');
+//vid_watch equals 'https://www.youtube.com/watch?v=epUk3T2Kfno' (notice where the video ID is in the url)</pre>
+          <br>
+        </li>
+        <li>
+          <strong>Generate the URL to Embed a Video from the Video ID</strong><br>
+          <br>
+          Syntax:
+          <pre>youtube.generateEmbedUrl(videoUrlOrID)</pre>
+          Expects an argument (videoUrlOrID) that is either a youtube URL or a ID and returns back the embed URL for that video.
+          <br>
+          <br>
+          Example:
+          <pre>var vid_embed = youtube.generateEmbedUrl('http://www.youtube.com/watch?v=epUk3T2Kfno');
+//vid_embed equals 'http://www.youtube.com/embed/epUk3T2Kfno' (notice where the video ID is in the url)</pre>
+        </li>
+      </ol>
+    </div><!--/container-->
+  
+<meta id="fake_position_meta" name="fake_geolocation_chrome_extension" content="{}"></body></html>

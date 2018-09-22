@@ -11,6 +11,12 @@ const runNicely = function( functionToRunNicely ){
 
   console.log('Hello, I am about to run your function, I hope that is to your liking sir!');
 
+  if (true) {
+    console.log('');
+    console.log('');
+    console.log('');
+  }
+
   functionToRunNicely();
 
   console.log('I sincerely hope that went well for you! Thank you for letting me help you to run your function, and have a nice day.');

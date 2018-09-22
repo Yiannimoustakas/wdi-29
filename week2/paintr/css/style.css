@@ -1,0 +1,10 @@
+
+body {
+  background-color: black;
+}
+
+.blob{
+  position: absolute;
+  border-radius: 50%;
+  /* background-image: url(http://fillmurray.com/300/300); */
+}
