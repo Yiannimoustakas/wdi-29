@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue intro</title>
+</head>
+<body>
+
+<div id="app">
+  <h2>Welcome to your first Vue app!</h2>
+
+  <!-- The v-bind directive causes the value of an attribute to be set by the variable (or method)
+        mentioned inside the quotes, i.e you put code to be evaluated inside the quotes  -->
+  <p v-bind:title="getDate()">
+    {{ message }}  <!-- use double curly brackets to interpolate a variable into a tag's contents -->
+  </p>
+
+
+  <!-- The v-if directive sets the visibility of an element based on the truthiness of the
+       data property you specify - in this case 'isVisible' -->
+  <p v-if="isVisible">Now you see me</p>
+
+
+  <ul>
+    <!-- v-for gives us as many copies of the tag as there are elements in the array or object -
+         and you have access to each array item (or object value) in the variable name you specify
+         before the 'in' - here, the variable will be 'item' -->
+    <li v-for="item in listItems">{{ item.text }}</li>
+  </ul>
+
+  <!--  v-on lets us attach an event handler to an event: in this case, on click of the button
+        element, the 'reverseMessage' method will be run -->
+  <button v-on:click="reverseMessage">Click me!</button>
+
+  <!-- v-model gives us "two-way binding" between an attribute and a piece of data: here,
+       the value of the text input will come from 'inputValue' -  and when we change the contents
+       of the input, it automatically updates the contents of 'inputValue' to match -->
+  <input type="text" v-model:value="inputValue" />
+
+</div>
+
+<script src="js/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
