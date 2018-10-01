@@ -38,7 +38,7 @@ const gameApp = new Vue({
 
       // GOTCHA: Vue re-renders the page when it detects changes to your data,
       // but it can't detect changes to the individual elements of an array in your data:
-      // this.board[position] = 'x';  // normal assinment; Vue can't see this, no re-render
+      // this.board[position] = 'x';  // normal assignment; Vue can't see this, no re-render
       // Instead, you need to use Vue.set()  - see https://vuejs.org/v2/guide/list.html#Caveats
       // (Note, could also do this.$forceUpdate(); but considered inelegant)
       Vue.set(this.board, position, turn);
