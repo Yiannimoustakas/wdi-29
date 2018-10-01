@@ -41,13 +41,14 @@ const gameApp = new Vue({
       // this.board[position] = 'x';  // normal assignment; Vue can't see this, no re-render
       // Instead, you need to use Vue.set()  - see https://vuejs.org/v2/guide/list.html#Caveats
       // (Note, could also do this.$forceUpdate(); but considered inelegant)
-      Vue.set(this.board, position, turn);
+      Vue.set(this.board, position, turn);  // instead of this.board[position] = turn;
       this.moveCount++;
 
       // Result from checkWin() will either be the array of winning positions, or if
-      // no winner found, it will be 'undefined'; the || here sets winningCombo to be
-      // an empty array if something falsey (like undefined) is returned by checkWin.
-      // We use winningCombo to set the class for the winning cells, to show an animation.
+      // no winner found, it will be undefined - that's how Array.find() works.
+      // The || here sets winningCombo to be an empty array if something falsey
+      // (like undefined) is returned by checkWin(). We use winningCombo in getCellWin()
+      // to set the class for the winning cells, triggering the CSS colour animation.
       this.winningCombo = this.checkWin(this.board, turn) || [];
       if( this.winningCombo.length ){
         this.winMessage = `${turn} wins`;
