@@ -68,3 +68,31 @@ get "/calc/sub/:x/:y" do
   @content = "The difference between #{x} and #{y} is #{result}."
   erb :calc_sub
 end
+
+
+get "/calc/form" do
+  erb :calc_form
+end
+
+# The form template above SUBMITS to this route:
+# i.e. it has <form action="/calc/process_form">
+get "/calc/process_form" do
+  # require 'pry'; binding.pry
+
+  @x = params[ :x ].to_f
+  @y = params[ :y ].to_f
+  @op = params[ :operator ]
+
+  # x.+( y ), i.e. x + y
+  # "send x the operation '+' with argument y"
+  @result = @x.send(@op, @y)
+
+  # result = case op
+  # when '+' then x + y
+  # when '-' then x - y
+  # when '/' then x / y
+  # when '*' then x * y
+  # end
+
+  erb :calc_result
+end
