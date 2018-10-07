@@ -45,7 +45,10 @@ class Person
     puts "Making a new Person object..."
     @name = name
     @age = age
-    @@people += 1 # each object can access the shared class variable
+
+    # each object can access the shared class variable
+    @@people += 1
+    puts "Total of #{ @@people } people created today."
   end
 
   def say_hello
