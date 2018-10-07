@@ -2,6 +2,14 @@ require 'pry'
 
 class Person
 
+  # Variables starting with '@@' are class variables; they are like
+  # a kind of global variable which is visible to all objects which
+  # are instances of the class
+  # They are the only kind of variable you can initialise (set a
+  # value for) directly in the class body, instead of inside a
+  # method like initialize()
+  @@people = 0
+
   # This will write the GETTER and SETTER boilerplate methods for @age and @name
   attr_accessor :age, :name
 
@@ -15,18 +23,29 @@ class Person
   #   @name = new_name
   # end
 
-  # class method, as opposed to the standard instance methods
-  # below
+  # Class method, as opposed to the standard instance methods
+  # below - we call this method directly on the class name
+  # itself, instead of creating a new object and then calling
+  # the method on the object. For example:
+  #   Person.describe_person    # call the class method
+  # instead of:
+  #   p = Person.new("Linna")   # create a new instance of Person
+  #   p.describe_person   # WON'T WORK - not defined for objects
+  #
+  # Note that class methods are defined by starting with 'self.'
   def self.describe_person
+    # Class methods do NOT have access to instance variables -
+    # how could they? Class methods are not defined for instances
     puts "I am for making people #{ @name }"
+    # Will print "I am for making people "
   end
 
-  # The initialize method is run whenever we do
-  # Person.new()
+  # The initialize method is run whenever we do Person.new()
   def initialize( name, age=20 )
     puts "Making a new Person object..."
     @name = name
     @age = age
+    @@people += 1 # each object can access the shared class variable
   end
 
   def say_hello
@@ -38,6 +57,8 @@ class Person
   end
 
   def laugh_at( person )
+    # This code will cause an error unless person is a kind
+    # of object with a .name attribute (method) defined
     puts "Hahah! You are so funny, #{ person.name }"
   end
 
@@ -63,6 +84,11 @@ class Comedian < Person
   end
 
   def laugh
+    # super()will call the laugh() method defined in the parent class,
+    # AKA superclass, i.e. you can override a method defined in the
+    # parent class in your child class, but still have access
+    # to the version of the method in the parent class
+    super()
     puts "Hahaha! I'm so funny!"
   end
 
@@ -87,4 +113,4 @@ class SerialKiller < Person
 end
 
 binding.pry
-puts "Done!"  # otherwise pry just exits
+puts "Done!"  # otherwise pry just exits and we can't test our classes
