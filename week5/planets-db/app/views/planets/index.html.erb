@@ -1,0 +1,13 @@
+
+<h2>Index of Planets</h2>
+
+<ul>
+<% @planets.each do |planet| %>
+  <li>
+    <!-- use the 'path helper' to generate the correct url for the show page for planets, passing in the ID of the planet we want to show -->
+    <a href="<%= planet_path(planet.id) %>">
+      <%= planet.name %>
+    </a>
+  </li>
+<% end %>
+</ul>

@@ -1,0 +1,21 @@
+
+<h2>Planet <%= @planet.name %></h2>
+
+<!--
+<a href="<%= planet_destroy_path(@planet.id) %>">Destroy this Planet</a> -->
+
+<%= link_to 'Edit this Planet', planet_edit_path(@planet.id) %>
+|
+<%= link_to 'Destroy this Planet', planet_destroy_path(@planet.id), class: 'destroy', id: 'delete_link' %>
+
+<p><strong>Orbit:</strong> <%= @planet.orbit %> earth orbits</p>
+<p><strong>Diameter:</strong> <%= @planet.diameter %> earth diameters</p>
+<p><strong>Mass:</strong> <%= @planet.mass %> earth masses </p>
+<p><strong>Temperature:</strong> <%= @planet.temperature %> earth temp </p>
+<p><strong>Moons:</strong> <%= @planet.moons %></p>
+
+<!-- make sure the image field is non-nil and .length > 0 -->
+<% if @planet.image.present? %>
+  <!-- <img src="<%= @planet.image %>" alt="<%= @planet.name %>"> -->
+  <%= image_tag @planet.image, alt: @planet.name, class: 'planet'  %>
+<% end %>

@@ -217,3 +217,10 @@ Processing by StocksController#lookup as HTML
 Completed 200 OK in 768ms (Views: 12.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-10-08 23:06:13 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 21ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+

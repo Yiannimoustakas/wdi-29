@@ -1,0 +1,244 @@
+Started GET "/" for 127.0.0.1 at 2018-10-09 10:48:42 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 18ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 10:49:37 +1100
+Processing by MoviesController#search_form as HTML
+  Rendering movies/search_form.html.erb within layouts/application
+  Rendered movies/search_form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 170ms (Views: 167.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-09 10:49:58 +1100
+Processing by MoviesController#search_form as HTML
+  Rendering movies/search_form.html.erb within layouts/application
+  Rendered movies/search_form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2018-10-09 10:50:01 +1100
+Processing by MoviesController#search_form as HTML
+  Rendering movies/search_form.html.erb within layouts/application
+  Rendered movies/search_form.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/results?query=aliens" for 127.0.0.1 at 2018-10-09 10:50:40 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/search/results"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started PUT "/__web_console/repl_sessions/a2e5b2b10dfea10121ef39c8a66085af" for 127.0.0.1 at 2018-10-09 10:51:32 +1100
+Started PUT "/__web_console/repl_sessions/a2e5b2b10dfea10121ef39c8a66085af" for 127.0.0.1 at 2018-10-09 10:51:34 +1100
+Started GET "/search/results?query=aliens" for 127.0.0.1 at 2018-10-09 11:04:41 +1100
+Processing by MoviesController#search_results as HTML
+  Parameters: {"query"=>"aliens"}
+Completed 500 Internal Server Error in 1899ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/movies_controller.rb:14:in `search_results'
+Started PUT "/__web_console/repl_sessions/4d3708562e74bb6e2c55ba7fe6fb7765" for 127.0.0.1 at 2018-10-09 11:04:58 +1100
+Started PUT "/__web_console/repl_sessions/4d3708562e74bb6e2c55ba7fe6fb7765" for 127.0.0.1 at 2018-10-09 11:05:01 +1100
+Started PUT "/__web_console/repl_sessions/4d3708562e74bb6e2c55ba7fe6fb7765" for 127.0.0.1 at 2018-10-09 11:05:06 +1100
+Started PUT "/__web_console/repl_sessions/4d3708562e74bb6e2c55ba7fe6fb7765" for 127.0.0.1 at 2018-10-09 11:05:07 +1100
+Started GET "/search/results?query=aliens" for 127.0.0.1 at 2018-10-09 11:13:24 +1100
+Processing by MoviesController#search_results as HTML
+  Parameters: {"query"=>"aliens"}
+Completed 500 Internal Server Error in 921ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/movies_controller.rb:14:in `search_results'
+Started GET "/search/results?query=aliens" for 127.0.0.1 at 2018-10-09 11:13:35 +1100
+Processing by MoviesController#search_results as HTML
+  Parameters: {"query"=>"aliens"}
+  Rendering movies/search_results.html.erb within layouts/application
+  Rendered movies/search_results.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 943ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/results?query=aliens" for 127.0.0.1 at 2018-10-09 11:42:33 +1100
+Processing by MoviesController#search_results as HTML
+  Parameters: {"query"=>"aliens"}
+  Rendering movies/search_results.html.erb within layouts/application
+  Rendered movies/search_results.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1136ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/20856" for 127.0.0.1 at 2018-10-09 11:42:50 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movies/20856"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/movies/20856" for 127.0.0.1 at 2018-10-09 11:48:14 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"20856"}
+Completed 500 Internal Server Error in 1877ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/movies_controller.rb:20:in `show'
+Started PUT "/__web_console/repl_sessions/70b9e3c90847f82d110892a66d8c13d6" for 127.0.0.1 at 2018-10-09 11:48:20 +1100
+Started PUT "/__web_console/repl_sessions/70b9e3c90847f82d110892a66d8c13d6" for 127.0.0.1 at 2018-10-09 11:48:21 +1100
+Started PUT "/__web_console/repl_sessions/70b9e3c90847f82d110892a66d8c13d6" for 127.0.0.1 at 2018-10-09 11:48:58 +1100
+Started PUT "/__web_console/repl_sessions/70b9e3c90847f82d110892a66d8c13d6" for 127.0.0.1 at 2018-10-09 11:49:35 +1100
+Started GET "/movies/20856" for 127.0.0.1 at 2018-10-09 11:54:02 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"20856"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 935ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/results?query=aliens" for 127.0.0.1 at 2018-10-09 11:54:20 +1100
+Processing by MoviesController#search_results as HTML
+  Parameters: {"query"=>"aliens"}
+  Rendering movies/search_results.html.erb within layouts/application
+  Rendered movies/search_results.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1008ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/679" for 127.0.0.1 at 2018-10-09 11:54:23 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"679"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 941ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/505618" for 127.0.0.1 at 2018-10-09 11:54:33 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"505618"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 964ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/results?query=inherent" for 127.0.0.1 at 2018-10-09 11:55:24 +1100
+Processing by MoviesController#search_results as HTML
+  Parameters: {"query"=>"inherent"}
+  Rendering movies/search_results.html.erb within layouts/application
+  Rendered movies/search_results.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 961ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/171274" for 127.0.0.1 at 2018-10-09 11:56:46 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"171274"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1930ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/171274" for 127.0.0.1 at 2018-10-09 12:01:13 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"171274"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant MoviesController::BASE_URL):
+  
+app/controllers/movies_controller.rb:18:in `show'
+Started GET "/movies/171274" for 127.0.0.1 at 2018-10-09 12:01:30 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"171274"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 1153ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::API_KEY):
+     7:   <strong>Revenue:</strong> $<%= @movie['revenue'] %>
+     8: </p>
+     9: 
+    10: <p><%= API_KEY %></p>
+  
+app/views/movies/show.html.erb:10:in `_app_views_movies_show_html_erb__3332552948242867476_70288759734920'
+Started GET "/movies/171274" for 127.0.0.1 at 2018-10-09 12:02:06 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"171274"}
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 926ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/results?query=inherent" for 127.0.0.1 at 2018-10-09 12:02:11 +1100
+Processing by MoviesController#search_results as HTML
+  Parameters: {"query"=>"inherent"}
+  Rendering movies/search_results.html.erb within layouts/application
+  Rendered movies/search_results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 926ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/results?query=inherent" for 127.0.0.1 at 2018-10-09 12:02:12 +1100
+Processing by MoviesController#search_results as HTML
+  Parameters: {"query"=>"inherent"}
+  Rendering movies/search_results.html.erb within layouts/application
+  Rendered movies/search_results.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 925ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
