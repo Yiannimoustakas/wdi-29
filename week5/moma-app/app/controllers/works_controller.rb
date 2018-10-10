@@ -22,16 +22,20 @@ class WorksController < ApplicationController
 
   # UPDATE
   def edit
-
+    @work = Work.find params[:id]
   end
 
   def update
-
+    @work = Work.find params[:id]   # route is PATCH "/works/:id", so we have the ID in params
+    @work.update work_params
+    redirect_to work_path(@work.id)
   end
 
   # DESTROY
   def destroy
-
+    @work = Work.find params[:id]
+    @work.destroy
+    redirect_to( works_path )
   end
 
   private

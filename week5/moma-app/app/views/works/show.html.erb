@@ -1,9 +1,15 @@
 
-<h2><%= @work.title %>, <%= @work.year.year %></h2>
+<h2><em><%= @work.title %></em>, <%= @work.year.year %></h2>
+<strong><%= link_to @work.artist.name, artist_path(@work.artist.id) %></strong>
 
-<strong><%= link_to @work.artist.name, artist_path(@work.artist.id) %></strong> 
 
 <p>Medium: <%= @work.medium %></p>
 <p>Style: <%= @work.style %></p>
 
 <%= image_tag @work.image, alt: @work.title, class: 'artworkImage' %>
+
+<br>
+
+<%= link_to 'Edit This Work', edit_work_path(@work) %>
+|
+<%= link_to 'Delete This Work', work_path(@work), method: 'delete' %>
