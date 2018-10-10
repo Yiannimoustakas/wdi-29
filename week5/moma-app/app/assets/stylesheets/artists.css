@@ -1,0 +1,15 @@
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: rgb(83, 81, 87);
+  color: white;
+}
+
+a {
+  color: rgb(251, 242, 195);
+}
+
+img.artistPortait {
+  max-height: 50vh;
+  margin-top: 30px;
+}

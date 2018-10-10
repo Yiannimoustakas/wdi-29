@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MomaApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <h1>MoMA Artists</h1>
+    <nav>
+      <%= link_to 'Artists Index', artists_path %>
+      |
+      <%= link_to 'Create New Artist', artists_new_path %>
+    </nav>
+    <hr>
+    <%= yield %>
+  </body>
+</html>

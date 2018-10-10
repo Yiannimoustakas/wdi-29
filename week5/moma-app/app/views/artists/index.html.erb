@@ -1,0 +1,12 @@
+
+<h2>All Artists</h2>
+
+<ul>
+<% @artists.each do |artist| %>
+  <li>
+    <a href="<%= artist_path(artist.id) %>">
+      <%= artist.name  %>, (<%= artist.nationality %>)
+    </a>
+  </li>
+<% end %>
+</ul>
