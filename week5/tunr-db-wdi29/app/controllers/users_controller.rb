@@ -24,6 +24,7 @@ class UsersController < ApplicationController
 
   def show
     # raise '🌴'
+    # console
   end
 
   def edit

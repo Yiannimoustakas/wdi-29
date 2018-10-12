@@ -6,6 +6,14 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def check_if_logged_in
+    unless @current_user.present?
+      flash[:error] = "You must be logged in to view that page."
+      redirect_to login_path
+
+    end
+  end
+
   def fetch_user
     # Check if session[:user_id] is set, and also if it stores
     # a valid user ID, and if so, set an instance variable

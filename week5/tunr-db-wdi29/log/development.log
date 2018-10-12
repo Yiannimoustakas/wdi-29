@@ -3964,3 +3964,2992 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/3" for 127.0.0.1 at 2018-10-11 21:48:22 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/__web_console/repl_sessions/d69fe8ee6278c077d0ee61705affabeb" for 127.0.0.1 at 2018-10-11 21:48:30 +1100
+Started PUT "/__web_console/repl_sessions/d69fe8ee6278c077d0ee61705affabeb" for 127.0.0.1 at 2018-10-11 21:48:31 +1100
+Started GET "/users/3" for 127.0.0.1 at 2018-10-11 22:03:58 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-10-11 22:04:13 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:32 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:32 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:34 +1100
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:45 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:45 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:48 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:48 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:48 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:48 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:48 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:48 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:49 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:49 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:04:49 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:05:18 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:05:20 +1100
+Started PUT "/__web_console/repl_sessions/1b80961889a2d3d6cd5ca030eafb35de" for 127.0.0.1 at 2018-10-11 22:05:23 +1100
+Started GET "/users/3" for 127.0.0.1 at 2018-10-12 09:49:10 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     9:    </ol>
+    10: <% end %>
+    11: 
+    12: <%= form_for @user do |f| %>
+    13: 
+    14:   <%= f.label :name %>
+    15:   <%= f.text_field :name %>
+  
+app/views/users/new.html.erb:12:in `_app_views_users_new_html_erb___2334270352464214886_70272320245860'
+app/controllers/users_controller.rb:28:in `show'
+Started GET "/users/3" for 127.0.0.1 at 2018-10-12 09:49:26 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 41ms (Views: 24.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-10-12 09:49:33 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 34ms (Views: 20.6ms | ActiveRecord: 4.3ms)
+
+
+Started PUT "/__web_console/repl_sessions/b7a1296cd784e82c7e77fd392b785473" for 127.0.0.1 at 2018-10-12 09:49:38 +1100
+Started PUT "/__web_console/repl_sessions/b7a1296cd784e82c7e77fd392b785473" for 127.0.0.1 at 2018-10-12 09:49:38 +1100
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-10-12 10:06:30 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [15 times] (3.1ms)
+  Rendered /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:06:36 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-12 10:06:40 +1100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 36ms (Views: 20.3ms | ActiveRecord: 7.1ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4301499368779656540)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddUserIdToMixtapes (20181011234349)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.3ms)[0m  [1m[35mALTER TABLE "mixtapes" ADD "user_id" integer[0m
+  ↳ db/migrate/20181011234349_add_user_id_to_mixtapes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181011234349"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4301499368779656540)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.7ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 40]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.5ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 40]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.4ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 40]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 41]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 41]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 41]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 42]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 42]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 42]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.3ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 43]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.3ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 43]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.8ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 43]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 44]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 44]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 44]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 45]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 45]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 45]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 46]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 46]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 46]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mSong Create (0.7ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Achy Breaky Heart"], ["created_at", "2018-10-11 23:53:46.787466"], ["updated_at", "2018-10-11 23:53:46.787466"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Have a Safe Trip, Dear"], ["created_at", "2018-10-11 23:53:46.789772"], ["updated_at", "2018-10-11 23:53:46.789772"]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Burn the Witch"], ["created_at", "2018-10-11 23:53:46.791123"], ["updated_at", "2018-10-11 23:53:46.791123"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Identikit"], ["created_at", "2018-10-11 23:53:46.792528"], ["updated_at", "2018-10-11 23:53:46.792528"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Rollerblade Success Story"], ["created_at", "2018-10-11 23:53:46.793879"], ["updated_at", "2018-10-11 23:53:46.793879"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "No One Gives a Hoot About Faux-Ass Nonsense"], ["created_at", "2018-10-11 23:53:46.795326"], ["updated_at", "2018-10-11 23:53:46.795326"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Sail to the Moon"], ["created_at", "2018-10-11 23:53:46.796697"], ["updated_at", "2018-10-11 23:53:46.796697"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mArtist Destroy (0.3ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 22]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mArtist Destroy (0.2ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mArtist Destroy (0.2ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mArtist Destroy (0.2ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Billy Ray Cyrus"], ["created_at", "2018-10-11 23:53:46.820781"], ["updated_at", "2018-10-11 23:53:46.820781"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "June of 44"], ["created_at", "2018-10-11 23:53:46.822582"], ["updated_at", "2018-10-11 23:53:46.822582"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mArtist Create (0.2ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Radiohead"], ["created_at", "2018-10-11 23:53:46.823959"], ["updated_at", "2018-10-11 23:53:46.823959"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mArtist Create (0.2ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Don Caballero"], ["created_at", "2018-10-11 23:53:46.825215"], ["updated_at", "2018-10-11 23:53:46.825215"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mSong Update (0.5ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 26], ["updated_at", "2018-10-11 23:53:46.830590"], ["id", 47]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 27], ["updated_at", "2018-10-11 23:53:46.832960"], ["id", 48]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 28], ["updated_at", "2018-10-11 23:53:46.834619"], ["id", 49]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 28], ["updated_at", "2018-10-11 23:53:46.836410"], ["id", 50]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 28], ["updated_at", "2018-10-11 23:53:46.838063"], ["id", 53]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mSong Update (0.4ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 29], ["updated_at", "2018-10-11 23:53:46.839970"], ["id", 51]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 29], ["updated_at", "2018-10-11 23:53:46.842061"], ["id", 52]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[36mAlbum Load (0.8ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mAlbum Destroy (0.2ms)[0m  [1m[31mDELETE FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mAlbum Destroy (0.2ms)[0m  [1m[31mDELETE FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mAlbum Destroy (0.3ms)[0m  [1m[31mDELETE FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mAlbum Destroy (0.3ms)[0m  [1m[31mDELETE FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mAlbum Destroy (0.2ms)[0m  [1m[31mDELETE FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("title", "year", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Some Gave All"], ["year", "1992"], ["created_at", "2018-10-11 23:53:46.860503"], ["updated_at", "2018-10-11 23:53:46.860503"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("title", "year", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Engine Takes to the Water"], ["year", "1998"], ["created_at", "2018-10-11 23:53:46.862842"], ["updated_at", "2018-10-11 23:53:46.862842"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mAlbum Create (0.2ms)[0m  [1m[32mINSERT INTO "albums" ("title", "year", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A Moon-Shaped Pool"], ["year", "2015"], ["created_at", "2018-10-11 23:53:46.864569"], ["updated_at", "2018-10-11 23:53:46.864569"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mAlbum Create (0.2ms)[0m  [1m[32mINSERT INTO "albums" ("title", "year", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "II"], ["year", "1992"], ["created_at", "2018-10-11 23:53:46.866103"], ["updated_at", "2018-10-11 23:53:46.866103"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mAlbum Create (0.2ms)[0m  [1m[32mINSERT INTO "albums" ("title", "year", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Hail to the Thief"], ["year", "1999"], ["created_at", "2018-10-11 23:53:46.867474"], ["updated_at", "2018-10-11 23:53:46.867474"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 31], ["updated_at", "2018-10-11 23:53:46.870391"], ["id", 47]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 32], ["updated_at", "2018-10-11 23:53:46.871958"], ["id", 48]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 33], ["updated_at", "2018-10-11 23:53:46.873332"], ["id", 49]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 33], ["updated_at", "2018-10-11 23:53:46.874734"], ["id", 50]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 34], ["updated_at", "2018-10-11 23:53:46.876455"], ["id", 51]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 34], ["updated_at", "2018-10-11 23:53:46.877841"], ["id", 52]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 35], ["updated_at", "2018-10-11 23:53:46.879336"], ["id", 53]]
+  ↳ db/seeds.rb:50
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 29]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.3ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 30]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 31]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 31]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 32]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 32]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 33]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 33]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 34]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 34]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 35]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 35]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mGenre Create (0.3ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Nautical Rock"], ["created_at", "2018-10-11 23:53:46.901937"], ["updated_at", "2018-10-11 23:53:46.901937"]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Math Rock"], ["created_at", "2018-10-11 23:53:46.903578"], ["updated_at", "2018-10-11 23:53:46.903578"]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Paranoid Art-Rock"], ["created_at", "2018-10-11 23:53:46.905132"], ["updated_at", "2018-10-11 23:53:46.905132"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:57
+  [1m[36mGenre Create (0.4ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Instrumental"], ["created_at", "2018-10-11 23:53:46.906644"], ["updated_at", "2018-10-11 23:53:46.906644"]]
+  ↳ db/seeds.rb:57
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:57
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "IDM"], ["created_at", "2018-10-11 23:53:46.908665"], ["updated_at", "2018-10-11 23:53:46.908665"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:59
+  [1m[36mGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Country"], ["created_at", "2018-10-11 23:53:46.910128"], ["updated_at", "2018-10-11 23:53:46.910128"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sadcore"], ["created_at", "2018-10-11 23:53:46.911436"], ["updated_at", "2018-10-11 23:53:46.911436"]]
+  ↳ db/seeds.rb:60
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:67
+  [1m[36mSong::HABTM_Genres Create (0.3ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 41], ["song_id", 47]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 36], ["song_id", 48]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 37], ["song_id", 48]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 38], ["song_id", 49]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 42], ["song_id", 49]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 38], ["song_id", 50]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 42], ["song_id", 50]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 40], ["song_id", 50]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 39], ["song_id", 51]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 37], ["song_id", 51]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:72
+  [1m[36mSong::HABTM_Genres Create (0.3ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 39], ["song_id", 52]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:72
+  [1m[36mSong::HABTM_Genres Create (0.3ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 38], ["song_id", 52]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:73
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 38], ["song_id", 53]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:73
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 42], ["song_id", 53]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:73
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 40], ["song_id", 53]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:73
+  [1m[36mMixtape Load (0.6ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mMixtape::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."mixtape_id" = $1[0m  [["mixtape_id", 7]]
+  ↳ db/seeds.rb:76
+  [1m[36mMixtape Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes" WHERE "mixtapes"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mMixtape::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."mixtape_id" = $1[0m  [["mixtape_id", 8]]
+  ↳ db/seeds.rb:76
+  [1m[36mMixtape Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes" WHERE "mixtapes"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mMixtape::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."mixtape_id" = $1[0m  [["mixtape_id", 9]]
+  ↳ db/seeds.rb:76
+  [1m[36mMixtape Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes" WHERE "mixtapes"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:80
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ db/seeds.rb:82
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luke@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:90
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Luke"], ["email", "luke@ga.co"], ["password_digest", "$2a$10$.AUW2RmUu7rUL880nuAXeedY1tnbYewOxvRyRrDMkubtsU/RzsN76"], ["created_at", "2018-10-11 23:53:47.063120"], ["updated_at", "2018-10-11 23:53:47.063120"]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:91
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "linna@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:91
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Linna"], ["email", "linna@ga.co"], ["password_digest", "$2a$10$4Zrt3szmivBixhuSXSXqcuIxaiI34FqXMQK9I3cW.QJDsSzMxMTqq"], ["created_at", "2018-10-11 23:53:47.122502"], ["updated_at", "2018-10-11 23:53:47.122502"]]
+  ↳ db/seeds.rb:91
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:91
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:92
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mikaela@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:92
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mikki"], ["email", "mikaela@ga.co"], ["password_digest", "$2a$10$2zqTw0MWMf5mHMF0583Jl.oA9rcSsOHELD2hM4tqMl65rguOpp0/G"], ["created_at", "2018-10-11 23:53:47.188960"], ["updated_at", "2018-10-11 23:53:47.188960"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:92
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:94
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape Create (0.4ms)[0m  [1m[32mINSERT INTO "mixtapes" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Driving Songs"], ["created_at", "2018-10-11 23:53:47.193458"], ["updated_at", "2018-10-11 23:53:47.193458"], ["user_id", 11]]
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape::HABTM_Songs Create (0.3ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 10], ["song_id", 47]]
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 10], ["song_id", 48]]
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 10], ["song_id", 49]]
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 10], ["song_id", 50]]
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 10], ["song_id", 51]]
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 10], ["song_id", 52]]
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 10], ["song_id", 53]]
+  ↳ db/seeds.rb:96
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:96
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Make-out Music"], ["created_at", "2018-10-11 23:53:47.201171"], ["updated_at", "2018-10-11 23:53:47.201171"], ["user_id", 11]]
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 11], ["song_id", 48]]
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 11], ["song_id", 50]]
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 11], ["song_id", 52]]
+  ↳ db/seeds.rb:96
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:96
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mMixtape Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Code Jams"], ["created_at", "2018-10-11 23:53:47.205356"], ["updated_at", "2018-10-11 23:53:47.205356"], ["user_id", 12]]
+  ↳ db/seeds.rb:97
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 12], ["song_id", 53]]
+  ↳ db/seeds.rb:97
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 12], ["song_id", 47]]
+  ↳ db/seeds.rb:97
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 12], ["song_id", 48]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.4ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 47]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.3ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 47]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.5ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 47]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.4ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 48]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.3ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 48]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 48]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 49]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 49]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 49]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.3ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 50]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.3ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 50]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 50]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 51]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 51]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 51]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 52]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.5ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 52]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.4ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 52]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Mixtapes Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."song_id" = $1[0m  [["song_id", 53]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong::HABTM_Genres Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."song_id" = $1[0m  [["song_id", 53]]
+  ↳ db/seeds.rb:2
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 53]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Achy Breaky Heart"], ["created_at", "2018-10-11 23:55:24.743029"], ["updated_at", "2018-10-11 23:55:24.743029"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Have a Safe Trip, Dear"], ["created_at", "2018-10-11 23:55:24.746647"], ["updated_at", "2018-10-11 23:55:24.746647"]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Burn the Witch"], ["created_at", "2018-10-11 23:55:24.748841"], ["updated_at", "2018-10-11 23:55:24.748841"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Identikit"], ["created_at", "2018-10-11 23:55:24.751702"], ["updated_at", "2018-10-11 23:55:24.751702"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Rollerblade Success Story"], ["created_at", "2018-10-11 23:55:24.754444"], ["updated_at", "2018-10-11 23:55:24.754444"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "No One Gives a Hoot About Faux-Ass Nonsense"], ["created_at", "2018-10-11 23:55:24.757592"], ["updated_at", "2018-10-11 23:55:24.757592"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Sail to the Moon"], ["created_at", "2018-10-11 23:55:24.760298"], ["updated_at", "2018-10-11 23:55:24.760298"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mArtist Destroy (0.3ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mArtist Destroy (0.2ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mArtist Destroy (0.2ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mArtist Destroy (0.2ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mArtist Create (0.3ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Billy Ray Cyrus"], ["created_at", "2018-10-11 23:55:24.788389"], ["updated_at", "2018-10-11 23:55:24.788389"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mArtist Create (0.2ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "June of 44"], ["created_at", "2018-10-11 23:55:24.790804"], ["updated_at", "2018-10-11 23:55:24.790804"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mArtist Create (0.2ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Radiohead"], ["created_at", "2018-10-11 23:55:24.793165"], ["updated_at", "2018-10-11 23:55:24.793165"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mArtist Create (0.2ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Don Caballero"], ["created_at", "2018-10-11 23:55:24.795228"], ["updated_at", "2018-10-11 23:55:24.795228"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mSong Update (0.4ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 30], ["updated_at", "2018-10-11 23:55:24.801252"], ["id", 54]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 31], ["updated_at", "2018-10-11 23:55:24.804971"], ["id", 55]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 32], ["updated_at", "2018-10-11 23:55:24.806885"], ["id", 56]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 32], ["updated_at", "2018-10-11 23:55:24.808610"], ["id", 57]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 32], ["updated_at", "2018-10-11 23:55:24.810392"], ["id", 60]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 33], ["updated_at", "2018-10-11 23:55:24.812303"], ["id", 58]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "artist_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["artist_id", 33], ["updated_at", "2018-10-11 23:55:24.813871"], ["id", 59]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mAlbum Destroy (0.2ms)[0m  [1m[31mDELETE FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 31]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mAlbum Destroy (0.2ms)[0m  [1m[31mDELETE FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 32]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mAlbum Destroy (0.2ms)[0m  [1m[31mDELETE FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 33]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mAlbum Destroy (0.3ms)[0m  [1m[31mDELETE FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 34]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mAlbum Destroy (0.2ms)[0m  [1m[31mDELETE FROM "albums" WHERE "albums"."id" = $1[0m  [["id", 35]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("title", "year", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Some Gave All"], ["year", "1992"], ["created_at", "2018-10-11 23:55:24.831369"], ["updated_at", "2018-10-11 23:55:24.831369"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mAlbum Create (0.2ms)[0m  [1m[32mINSERT INTO "albums" ("title", "year", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Engine Takes to the Water"], ["year", "1998"], ["created_at", "2018-10-11 23:55:24.832913"], ["updated_at", "2018-10-11 23:55:24.832913"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("title", "year", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "A Moon-Shaped Pool"], ["year", "2015"], ["created_at", "2018-10-11 23:55:24.834286"], ["updated_at", "2018-10-11 23:55:24.834286"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("title", "year", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "II"], ["year", "1992"], ["created_at", "2018-10-11 23:55:24.835889"], ["updated_at", "2018-10-11 23:55:24.835889"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mAlbum Create (0.2ms)[0m  [1m[32mINSERT INTO "albums" ("title", "year", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Hail to the Thief"], ["year", "1999"], ["created_at", "2018-10-11 23:55:24.837436"], ["updated_at", "2018-10-11 23:55:24.837436"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 36], ["updated_at", "2018-10-11 23:55:24.840809"], ["id", 54]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 37], ["updated_at", "2018-10-11 23:55:24.842615"], ["id", 55]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 38], ["updated_at", "2018-10-11 23:55:24.844240"], ["id", 56]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 38], ["updated_at", "2018-10-11 23:55:24.845591"], ["id", 57]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 39], ["updated_at", "2018-10-11 23:55:24.847146"], ["id", 58]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 39], ["updated_at", "2018-10-11 23:55:24.848489"], ["id", 59]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "album_id" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["album_id", 40], ["updated_at", "2018-10-11 23:55:24.850165"], ["id", 60]]
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.3ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 36]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.3ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 36]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 37]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 37]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.4ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 38]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.4ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 38]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 39]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 39]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 40]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 40]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 41]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 41]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mGenre::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres_songs" WHERE "genres_songs"."genre_id" = $1[0m  [["genre_id", 42]]
+  ↳ db/seeds.rb:52
+  [1m[36mGenre Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 42]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mGenre Create (0.3ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Nautical Rock"], ["created_at", "2018-10-11 23:55:24.872783"], ["updated_at", "2018-10-11 23:55:24.872783"]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Math Rock"], ["created_at", "2018-10-11 23:55:24.874518"], ["updated_at", "2018-10-11 23:55:24.874518"]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mGenre Create (0.4ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Paranoid Art-Rock"], ["created_at", "2018-10-11 23:55:24.876403"], ["updated_at", "2018-10-11 23:55:24.876403"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:57
+  [1m[36mGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Instrumental"], ["created_at", "2018-10-11 23:55:24.878211"], ["updated_at", "2018-10-11 23:55:24.878211"]]
+  ↳ db/seeds.rb:57
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:57
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mGenre Create (0.4ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "IDM"], ["created_at", "2018-10-11 23:55:24.880205"], ["updated_at", "2018-10-11 23:55:24.880205"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:59
+  [1m[36mGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Country"], ["created_at", "2018-10-11 23:55:24.882484"], ["updated_at", "2018-10-11 23:55:24.882484"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mGenre Create (0.4ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sadcore"], ["created_at", "2018-10-11 23:55:24.884237"], ["updated_at", "2018-10-11 23:55:24.884237"]]
+  ↳ db/seeds.rb:60
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:67
+  [1m[36mSong::HABTM_Genres Create (0.3ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 48], ["song_id", 54]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mSong::HABTM_Genres Create (0.3ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 43], ["song_id", 55]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 44], ["song_id", 55]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 45], ["song_id", 56]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 49], ["song_id", 56]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 45], ["song_id", 57]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 49], ["song_id", 57]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 47], ["song_id", 57]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 46], ["song_id", 58]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 44], ["song_id", 58]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:72
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 46], ["song_id", 59]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:72
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 45], ["song_id", 59]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:73
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 45], ["song_id", 60]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:73
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 49], ["song_id", 60]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:73
+  [1m[36mSong::HABTM_Genres Create (0.2ms)[0m  [1m[32mINSERT INTO "genres_songs" ("genre_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["genre_id", 47], ["song_id", 60]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:73
+  [1m[36mMixtape Load (0.4ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mMixtape::HABTM_Songs Destroy (0.3ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."mixtape_id" = $1[0m  [["mixtape_id", 10]]
+  ↳ db/seeds.rb:76
+  [1m[36mMixtape Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes" WHERE "mixtapes"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mMixtape::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."mixtape_id" = $1[0m  [["mixtape_id", 11]]
+  ↳ db/seeds.rb:76
+  [1m[36mMixtape Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes" WHERE "mixtapes"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mMixtape::HABTM_Songs Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."mixtape_id" = $1[0m  [["mixtape_id", 12]]
+  ↳ db/seeds.rb:76
+  [1m[36mMixtape Destroy (0.2ms)[0m  [1m[31mDELETE FROM "mixtapes" WHERE "mixtapes"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mMixtape Create (0.4ms)[0m  [1m[32mINSERT INTO "mixtapes" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Driving Songs"], ["created_at", "2018-10-11 23:55:24.934184"], ["updated_at", "2018-10-11 23:55:24.934184"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:79
+  [1m[36mMixtape Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Make-out Music"], ["created_at", "2018-10-11 23:55:24.936593"], ["updated_at", "2018-10-11 23:55:24.936593"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[36mMixtape Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Code Jams"], ["created_at", "2018-10-11 23:55:24.938130"], ["updated_at", "2018-10-11 23:55:24.938130"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:80
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ db/seeds.rb:82
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mMixtape::HABTM_Songs Create (0.3ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 13], ["song_id", 54]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mMixtape::HABTM_Songs Create (0.3ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 13], ["song_id", 55]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mMixtape::HABTM_Songs Create (0.3ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 13], ["song_id", 56]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 13], ["song_id", 57]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mMixtape::HABTM_Songs Create (0.3ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 13], ["song_id", 58]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mMixtape::HABTM_Songs Create (0.3ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 13], ["song_id", 59]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 13], ["song_id", 60]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:85
+  [1m[36mMixtape::HABTM_Songs Create (0.3ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 14], ["song_id", 55]]
+  ↳ db/seeds.rb:85
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:85
+  [1m[36mMixtape::HABTM_Songs Create (0.3ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 14], ["song_id", 57]]
+  ↳ db/seeds.rb:85
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:85
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 14], ["song_id", 59]]
+  ↳ db/seeds.rb:85
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:86
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 15], ["song_id", 60]]
+  ↳ db/seeds.rb:86
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:86
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:86
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 15], ["song_id", 54]]
+  ↳ db/seeds.rb:86
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:86
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:86
+  [1m[36mMixtape::HABTM_Songs Create (0.2ms)[0m  [1m[32mINSERT INTO "mixtapes_songs" ("mixtape_id", "song_id") VALUES ($1, $2) RETURNING "id"[0m  [["mixtape_id", 15], ["song_id", 55]]
+  ↳ db/seeds.rb:86
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:86
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luke@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:90
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Luke"], ["email", "luke@ga.co"], ["password_digest", "$2a$10$YTgMpQbe3ffM9/XXOig4ke7dPgjAsyXzcTJcLP944ccqJohImebFu"], ["created_at", "2018-10-11 23:55:25.048530"], ["updated_at", "2018-10-11 23:55:25.048530"]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:91
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "linna@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:91
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Linna"], ["email", "linna@ga.co"], ["password_digest", "$2a$10$Adv8NIsbehoqQ3Q6/IcYde6l4nCrJtbf2Wq9vyWhufeMXfHdtTzlm"], ["created_at", "2018-10-11 23:55:25.113987"], ["updated_at", "2018-10-11 23:55:25.113987"]]
+  ↳ db/seeds.rb:91
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:91
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:92
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mikaela@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:92
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mikki"], ["email", "mikaela@ga.co"], ["password_digest", "$2a$10$pHy7K7HA/S6P.Wrg.5ElLeckQYQTgdn2/jK/4ResxEl1lpwxBgB0G"], ["created_at", "2018-10-11 23:55:25.175934"], ["updated_at", "2018-10-11 23:55:25.175934"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:92
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:94
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape Update (0.3ms)[0m  [1m[33mUPDATE "mixtapes" SET "updated_at" = $1, "user_id" = $2 WHERE "mixtapes"."id" = $3[0m  [["updated_at", "2018-10-11 23:55:25.179413"], ["user_id", 14], ["id", 13]]
+  ↳ db/seeds.rb:96
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:96
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:96
+  [1m[36mMixtape Update (0.2ms)[0m  [1m[33mUPDATE "mixtapes" SET "updated_at" = $1, "user_id" = $2 WHERE "mixtapes"."id" = $3[0m  [["updated_at", "2018-10-11 23:55:25.181265"], ["user_id", 14], ["id", 14]]
+  ↳ db/seeds.rb:96
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:96
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mMixtape Update (0.2ms)[0m  [1m[33mUPDATE "mixtapes" SET "updated_at" = $1, "user_id" = $2 WHERE "mixtapes"."id" = $3[0m  [["updated_at", "2018-10-11 23:55:25.182810"], ["user_id", 15], ["id", 15]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMixtape Load (0.4ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."user_id" = $1[0m  [["user_id", 14]]
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" ORDER BY "mixtapes"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" ORDER BY "mixtapes"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-10-12 11:03:05 +1100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [23 times] (4.8ms)
+  Rendered /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/textchimp/.rvm/gems/ruby-2.4.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mixtapes/new" for 127.0.0.1 at 2018-10-12 11:04:04 +1100
+Processing by MixtapesController#new as HTML
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mixtapes/new" for 127.0.0.1 at 2018-10-12 11:11:41 +1100
+Processing by MixtapesController#new as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :check_if_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-12 11:11:41 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 11:11:57 +1100
+Processing by MixtapesController#index as HTML
+  Rendering mixtapes/index.html.erb within layouts/application
+  Rendered mixtapes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mixtapes/1" for 127.0.0.1 at 2018-10-12 11:12:19 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering mixtapes/show.html.erb within layouts/application
+  Rendered mixtapes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mixtapes/new" for 127.0.0.1 at 2018-10-12 11:12:31 +1100
+Processing by MixtapesController#new as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :check_if_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-12 11:12:31 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mixtapes/new" for 127.0.0.1 at 2018-10-12 11:18:30 +1100
+Processing by MixtapesController#new as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :check_if_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-12 11:18:30 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-12 11:18:47 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-12 11:19:10 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-12 11:19:10 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mixtapes/new" for 127.0.0.1 at 2018-10-12 11:57:33 +1100
+Processing by MixtapesController#new as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :check_if_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-12 11:57:33 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-10-12 11:57:58 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iIVOZ3AxBG6bMelJ5eusJLYCGkLkiTwfsPjRRFq1TTY01owHRjIPqY6FR2SfcXU5aW4wYLCLiuxLL0igjQBQ8w==", "email"=>"luke@ga.co", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luke@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:7
+Redirected to http://localhost:3000/users/14
+Completed 302 Found in 79ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/users/14" for 127.0.0.1 at 2018-10-12 11:57:58 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mixtapes/new" for 127.0.0.1 at 2018-10-12 11:58:10 +1100
+Processing by MixtapesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 14.8ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 11:59:09 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+qZHzhXbVgkff1Gsjz1xXDtqt2mHZG+M2HL2jhIaYRFG9YWuI9hdzgrL/4H1p6hB5AadS9Nm2X8jpW9qxa981A==", "mixtape"=>{"name"=>"Surfing Tunes", "image"=>"http://fillmurray.com/400/300"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 0.3ms)
+
+
+  
+NameError (undefined local variable or method `mixtape_params' for #<MixtapesController:0x007fd312d91c90>
+Did you mean?  mixtape_path):
+  
+app/controllers/mixtapes_controller.rb:16:in `create'
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 12:00:58 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+qZHzhXbVgkff1Gsjz1xXDtqt2mHZG+M2HL2jhIaYRFG9YWuI9hdzgrL/4H1p6hB5AadS9Nm2X8jpW9qxa981A==", "mixtape"=>{"name"=>"Surfing Tunes", "image"=>"http://fillmurray.com/400/300"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:16
+  [1m[36mMixtape Create (0.4ms)[0m  [1m[32mINSERT INTO "mixtapes" ("name", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Surfing Tunes"], ["image", "http://fillmurray.com/400/300"], ["created_at", "2018-10-12 01:00:58.927511"], ["updated_at", "2018-10-12 01:00:58.927511"]]
+  ↳ app/controllers/mixtapes_controller.rb:16
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/mixtapes_controller.rb:16
+Redirected to http://localhost:3000/mixtapes
+Completed 302 Found in 26ms (ActiveRecord: 9.3ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 12:00:58 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  Rendered mixtapes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mMixtape Load (0.5ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" ORDER BY "mixtapes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMixtape Load (0.4ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" ORDER BY "mixtapes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMixtape Create (0.5ms)[0m  [1m[32mINSERT INTO "mixtapes" ("name", "image", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "test tape"], ["image", "http:"], ["created_at", "2018-10-12 01:09:02.216378"], ["updated_at", "2018-10-12 01:09:02.216378"], ["user_id", 14]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/mixtapes/new" for 127.0.0.1 at 2018-10-12 12:14:21 +1100
+Processing by MixtapesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 52ms (Views: 21.8ms | ActiveRecord: 11.5ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 12:14:55 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8aSt7eSn2i1SA6KLWpRr0p8ocasN+6vD8e+LIzdL0N5N92+N0qTR6ke3DKYgDrLPQERbiVn5HTAKOBLH4P7NGw==", "mixtape"=>{"name"=>"Walking Songs", "image"=>"http://fillmurray.com/800/800"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:19
+  [1m[36mMixtape Create (0.5ms)[0m  [1m[32mINSERT INTO "mixtapes" ("name", "image", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Walking Songs"], ["image", "http://fillmurray.com/800/800"], ["created_at", "2018-10-12 01:14:55.661806"], ["updated_at", "2018-10-12 01:14:55.661806"], ["user_id", 14]]
+  ↳ app/controllers/mixtapes_controller.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/mixtapes_controller.rb:19
+Redirected to http://localhost:3000/mixtapes
+Completed 302 Found in 13ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 12:14:55 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  Rendered mixtapes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mMixtape Load (0.4ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" ORDER BY "mixtapes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMixtape Load (0.5ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" ORDER BY "mixtapes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" ORDER BY "mixtapes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 12:20:27 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8aSt7eSn2i1SA6KLWpRr0p8ocasN+6vD8e+LIzdL0N5N92+N0qTR6ke3DKYgDrLPQERbiVn5HTAKOBLH4P7NGw==", "mixtape"=>{"name"=>"Walking Songs 2", "image"=>"http://fillmurray.com/800/800"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:27
+  [1m[36mMixtape Create (0.9ms)[0m  [1m[32mINSERT INTO "mixtapes" ("name", "image", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Walking Songs 2"], ["image", "http://fillmurray.com/800/800"], ["created_at", "2018-10-12 01:20:27.758405"], ["updated_at", "2018-10-12 01:20:27.758405"], ["user_id", 14]]
+  ↳ app/controllers/mixtapes_controller.rb:27
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/mixtapes_controller.rb:27
+Redirected to http://localhost:3000/mixtapes
+Completed 302 Found in 41ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 12:20:27 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  Rendered mixtapes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mMixtape Load (0.5ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" ORDER BY "mixtapes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" ORDER BY "mixtapes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "mixtapes"."id", "mixtapes"."user_id" FROM "mixtapes"[0m
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMixtape::HABTM_Songs Destroy (0.4ms)[0m  [1m[31mDELETE FROM "mixtapes_songs" WHERE "mixtapes_songs"."mixtape_id" = $1[0m  [["mixtape_id", 16]]
+  [1m[36mMixtape Destroy (0.3ms)[0m  [1m[31mDELETE FROM "mixtapes" WHERE "mixtapes"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "mixtapes"."id", "mixtapes"."user_id" FROM "mixtapes"[0m
+  [1m[36mMixtape Load (0.7ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."user_id" IS NULL[0m
+  [1m[36mMixtape Load (0.4ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."user_id" IS NULL[0m
+  [1m[36mMixtape Load (0.4ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."user_id" IS NULL[0m
+  [1m[36mMixtape Load (0.4ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."user_id" IS NULL[0m
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 12:28:41 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  [1m[36mMixtape Load (0.5ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ app/views/mixtapes/index.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  Rendered mixtapes/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 58ms (Views: 31.8ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 12:28:51 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ app/views/mixtapes/index.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  Rendered mixtapes/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 12:28:56 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ app/views/mixtapes/index.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:5
+  Rendered mixtapes/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 12:30:25 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ app/views/mixtapes/index.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  Rendered mixtapes/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mixtapes/13" for 127.0.0.1 at 2018-10-12 12:30:34 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  Rendered mixtapes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 13.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/mixtapes/13" for 127.0.0.1 at 2018-10-12 12:33:54 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.5ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    2: 
+    3: Created by <%= @mixtape.user.name %>
+    4: <br>
+    5: <%= image_tag @mixtape.image, class: 'mixtapeCover' %>
+    6: <br>
+    7: <%= link_to 'Edit Mixtape', edit_mixtape_path(@mixtape)  %>
+  
+app/views/mixtapes/show.html.erb:5:in `_app_views_mixtapes_show_html_erb__3286002717903939428_70272325621760'
+Started GET "/mixtapes/13" for 127.0.0.1 at 2018-10-12 12:36:24 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/mixtapes/14" for 127.0.0.1 at 2018-10-12 12:36:28 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mixtapes/19" for 127.0.0.1 at 2018-10-12 12:36:29 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mixtapes/18" for 127.0.0.1 at 2018-10-12 12:36:34 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mixtapes/17" for 127.0.0.1 at 2018-10-12 12:36:37 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (The asset "http:" is not present in the asset pipeline.):
+    3: Created by <%= @mixtape.user.name %>
+    4: <br>
+    5: <% if @mixtape.image.present? %>
+    6:   <%= image_tag @mixtape.image, class: 'mixtapeCover' %>
+    7: <% end %>
+    8: <br>
+    9: <%= link_to 'Edit Mixtape', edit_mixtape_path(@mixtape)  %>
+  
+app/views/mixtapes/show.html.erb:6:in `_app_views_mixtapes_show_html_erb__3286002717903939428_70272257876420'
+Started GET "/mixtapes/18" for 127.0.0.1 at 2018-10-12 12:36:57 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mixtapes/14" for 127.0.0.1 at 2018-10-12 12:36:59 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.1ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mixtapes/14/edit" for 127.0.0.1 at 2018-10-12 12:37:02 +1100
+Processing by MixtapesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:40
+  Rendering mixtapes/edit.html.erb within layouts/application
+  Rendered mixtapes/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2018-10-12 12:37:18 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ra8UnjKypGDjNjCU9ArjLBFXA1+SSKVTbpG6L3hkzbT5/Nb+BLGvp/aCnrmOkDoxzjspfcZKE6CVRiPLr9HQcQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-12 12:37:18 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/login" for 127.0.0.1 at 2018-10-12 12:37:35 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fC+V5386o6cIJ7m+OfVWGNgfPjM/Jq74DOagX0CXzvHAfFeHSTmoYB2TF5NDb48FB3MUEWskGAv3MTm7lyLTNA==", "email"=>"linna@ga.co", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "linna@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:7
+Redirected to http://localhost:3000/users/15
+Completed 302 Found in 62ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/15" for 127.0.0.1 at 2018-10-12 12:37:35 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 12:37:46 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ app/views/mixtapes/index.html.erb:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  Rendered mixtapes/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/mixtapes/15" for 127.0.0.1 at 2018-10-12 12:37:55 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mixtapes/14" for 127.0.0.1 at 2018-10-12 12:38:01 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 14.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mixtapes/14/edit" for 127.0.0.1 at 2018-10-12 12:38:03 +1100
+Processing by MixtapesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:40
+  Rendering mixtapes/edit.html.erb within layouts/application
+  Rendered mixtapes/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mixtapes/14" for 127.0.0.1 at 2018-10-12 12:43:11 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 21ms (Views: 17.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2018-10-12 12:43:13 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WO5gTYXfW2wSj5xv9CklD2kcIhtego2hs3+gU3g5bMrkvaIts9xQqwc7MkKOs/wStnAIOQqAO1JIqDm3r4xxDw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-12 12:43:13 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-10-12 12:43:22 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/TuXNXBP8os7AnBzphFuw+WDQ/tTRZcnBO5kivXB+XtBaFVVRkz5TC623l7ci7feOu9p2QdHIdT/Of1uInTkvg==", "email"=>"luke@ga.co", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luke@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:7
+Redirected to http://localhost:3000/users/14
+Completed 302 Found in 61ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/14" for 127.0.0.1 at 2018-10-12 12:43:22 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 12:43:27 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ app/views/mixtapes/index.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  Rendered mixtapes/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 46ms (Views: 42.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/mixtapes/17" for 127.0.0.1 at 2018-10-12 12:43:28 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.1ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "http:" is not present in the asset pipeline.):
+    3: Created by <%= @mixtape.user.name %>
+    4: <br>
+    5: <% if @mixtape.image.present? %>
+    6:   <%= image_tag @mixtape.image, class: 'mixtapeCover' %>
+    7: <% end %>
+    8: <br>
+    9: 
+  
+app/views/mixtapes/show.html.erb:6:in `_app_views_mixtapes_show_html_erb__3286002717903939428_70272265295440'
+Started GET "/mixtapes/14" for 127.0.0.1 at 2018-10-12 12:43:33 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2018-10-12 12:43:38 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tTE0OJdRpBh/H++79ObJJ1Dx++kImJKb25hwHp0ph7UJYvZYoVKv32qrQZaOfBA6j53Ry1yaJGggT+n6SpyacA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-12 12:43:38 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-10-12 12:43:53 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o1iQnyRd9lx/ORtkC+recUn+Di6mY/v09IPbgV10zdwfC1L/El79m2qNtUlxcAdslpIkDPJhTQcPVEJlisHQGQ==", "email"=>"linna@ga.co", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "linna@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:7
+Redirected to http://localhost:3000/users/15
+Completed 302 Found in 57ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/15" for 127.0.0.1 at 2018-10-12 12:43:53 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-10-12 12:49:31 +1100
+Processing by SessionController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 12:49:37 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  [1m[36mMixtape Load (0.5ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ app/views/mixtapes/index.html.erb:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  Rendered mixtapes/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/mixtapes/13" for 127.0.0.1 at 2018-10-12 12:49:41 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.4ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/mixtapes/15" for 127.0.0.1 at 2018-10-12 12:49:51 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 14.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mixtapes/15/edit" for 127.0.0.1 at 2018-10-12 12:49:53 +1100
+Processing by MixtapesController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:40
+  Rendering mixtapes/edit.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.5ms)
+  Rendered mixtapes/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 23ms (Views: 18.0ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/mixtapes/13" for 127.0.0.1 at 2018-10-12 12:50:48 +1100
+Processing by MixtapesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IqgK9GleDv15RPfTC1htsQvJv3B6asCryrge9TX3h8Ge+8iUX10FOmzwWf5xwrSs1KWVUi5odlgxb4cR4kKaBA==", "mixtape"=>{"name"=>"LINNA OWNS U", "image"=>""}, "commit"=>"Update Mixtape", "id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:45
+  [1m[36mMixtape Update (0.4ms)[0m  [1m[33mUPDATE "mixtapes" SET "name" = $1, "image" = $2, "updated_at" = $3 WHERE "mixtapes"."id" = $4[0m  [["name", "LINNA OWNS U"], ["image", ""], ["updated_at", "2018-10-12 01:50:48.692099"], ["id", 13]]
+  ↳ app/controllers/mixtapes_controller.rb:45
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/mixtapes_controller.rb:45
+Redirected to http://localhost:3000/mixtapes/13
+Completed 302 Found in 10ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/mixtapes/13" for 127.0.0.1 at 2018-10-12 12:50:48 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/mixtapes/13" for 127.0.0.1 at 2018-10-12 12:57:56 +1100
+Processing by MixtapesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IqgK9GleDv15RPfTC1htsQvJv3B6asCryrge9TX3h8Ge+8iUX10FOmzwWf5xwrSs1KWVUi5odlgxb4cR4kKaBA==", "mixtape"=>{"name"=>"PWNNNNEED", "image"=>""}, "commit"=>"Update Mixtape", "id"=>"13"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.4ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:44
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:48
+Redirected to http://localhost:3000/mixtapes
+Completed 302 Found in 31ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 12:57:56 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ app/views/mixtapes/index.html.erb:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  Rendered mixtapes/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/mixtapes/18" for 127.0.0.1 at 2018-10-12 12:58:18 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 14.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/mixtapes/17" for 127.0.0.1 at 2018-10-12 12:58:24 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (The asset "http:" is not present in the asset pipeline.):
+    3: Created by <%= @mixtape.user.name %>
+    4: <br>
+    5: <% if @mixtape.image.present? %>
+    6:   <%= image_tag @mixtape.image, class: 'mixtapeCover' %>
+    7: <% end %>
+    8: <br>
+    9: 
+  
+app/views/mixtapes/show.html.erb:6:in `_app_views_mixtapes_show_html_erb__3286002717903939428_70272318932620'
+Started GET "/mixtapes/14" for 127.0.0.1 at 2018-10-12 12:58:27 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:36
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mixtapes/new" for 127.0.0.1 at 2018-10-12 14:09:01 +1100
+Processing by MixtapesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.7ms)
+  Rendered mixtapes/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 55ms (Views: 22.5ms | ActiveRecord: 11.8ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 14:09:36 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wcOkMkJOUhIxwxsYId7+ghjeK7hxP1Mei4PhkFDQ6S19kGZSdE1Z1SR3tTVbRCefx7IBmiU95e1wVHh0h2X06A==", "mixtape"=>{"name"=>"", "image"=>"http://placekitten.com/400/400"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+Redirected to http://localhost:3000/mixtapes
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 14:09:36 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  [1m[36mMixtape Load (0.4ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ app/views/mixtapes/index.html.erb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  Rendered mixtapes/index.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/mixtapes/new" for 127.0.0.1 at 2018-10-12 14:17:23 +1100
+Processing by MixtapesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.6ms)
+  Rendered mixtapes/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 53ms (Views: 20.3ms | ActiveRecord: 11.3ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 14:17:49 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nNgDUeD2ZEkGa85mcEhXoO2drUocB0kBnxvADd1XL54gi8Ex1vVvjhPfYEsK0o69MvGHaEgF//JkzFnpCuIyWw==", "mixtape"=>{"name"=>"", "image"=>"http://placekitten.com/400/400"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+Redirected to http://localhost:3000/mixtapes/new
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/mixtapes/new" for 127.0.0.1 at 2018-10-12 14:17:49 +1100
+Processing by MixtapesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.1ms)
+  Rendered mixtapes/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 14:20:20 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QWdYlAghtmQsS6vY2rTpdAPq51HRrklwnL2CTZ20Yv79NJr0PiK9ozn/BfWgLjBp3IbNc4Ws/4NnahupSgF/Ow==", "mixtape"=>{"name"=>"", "image"=>"test"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (2.0ms)
+  Rendered mixtapes/new.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 7.7ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: 
+    2: <%= form_for @mixtape do |f| %>
+    3:   <%= f.label :name %>
+    4:   <%= f.text_field :name %>
+    5:   <br>
+  
+app/views/mixtapes/_form.html.erb:2:in `_app_views_mixtapes__form_html_erb___3925872683443872222_70272317656180'
+app/views/mixtapes/new.html.erb:12:in `_app_views_mixtapes_new_html_erb___2541165931989679291_70272317742440'
+app/controllers/mixtapes_controller.rb:31:in `create'
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 14:21:38 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QWdYlAghtmQsS6vY2rTpdAPq51HRrklwnL2CTZ20Yv79NJr0PiK9ozn/BfWgLjBp3IbNc4Ws/4NnahupSgF/Ow==", "mixtape"=>{"name"=>"", "image"=>"test"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (2.1ms)
+  Rendered mixtapes/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 56ms (Views: 27.2ms | ActiveRecord: 8.0ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 14:26:14 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DZYiQkdEqHSStxnXsSh2cULJ0aDZfpMAKxiUUfxZVB+xxeAicUejs4cDt/rLsq9snaX7go18JfPQzw21K+xJ2g==", "mixtape"=>{"name"=>"", "image"=>"http"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (2.0ms)
+  Rendered mixtapes/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 14:26:15 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yZA7AyF7+pdxjtKd/5JboR2VdU2V4Djxp7gljN9WmmJ1w/ljF3jxUGQ6fLCFCIK8wvlfb8HijgJcb7xoCOOHpw==", "mixtape"=>{"name"=>"", "image"=>"http"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.4ms)
+  Rendered mixtapes/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 14:26:16 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GRoljXJKIe6tcO+Bc5+T4/tomF+u2oowdbGd9Q/L2FKlSeftREkqKbjEQawJBUr+JASyffrYPMOOZgQR2H7Flw==", "mixtape"=>{"name"=>"", "image"=>"http"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.4ms)
+  Rendered mixtapes/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 14:26:17 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dX+1W3wUz77Y69wU/jnjic00LdONDgcl+ITv22KfQ53JLHc7ShfEec1fcjmEozqUElgH8dkMsdYDU3Y/tSpeWA==", "mixtape"=>{"name"=>"", "image"=>"http"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.4ms)
+  Rendered mixtapes/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 14:26:17 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hJqOwNUshyP1w/bKAG6V0A/lOCuwJH8JL47yEJ8dNs84yUyg4y+M5OB3WOd69EzN0IkSCeQmyfrUWWv0SKgrCg==", "mixtape"=>{"name"=>"", "image"=>"http"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.3ms)
+  Rendered mixtapes/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 14:26:17 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uhbVlCQQqWU1YhmHg7Z5GCWx1KfbgmlzhA89GhI0cmgGRRf0EhOioiDWt6r5LKAF+t3+hY+A34B/2KT+xYFvrQ==", "mixtape"=>{"name"=>"", "image"=>"http"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.6ms)
+  Rendered mixtapes/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 14:26:29 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uhbVlCQQqWU1YhmHg7Z5GCWx1KfbgmlzhA89GhI0cmgGRRf0EhOioiDWt6r5LKAF+t3+hY+A34B/2KT+xYFvrQ==", "mixtape"=>{"name"=>"", "image"=>"http"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.4ms)
+  Rendered mixtapes/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 35ms (Views: 30.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 14:28:58 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"st6x998TnB4PaUbasusCYg9KGcQXqMjzGqq4GkAmBhoOjXOX6RCX2Rrd6PfIcdt/0CYz5kOqfgDhfSH+l5Mb3w==", "mixtape"=>{"name"=>"a", "image"=>"http://pleaserememberthisevenwhenihaveanerror"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  Rendering mixtapes/new.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.2ms)
+  Rendered mixtapes/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/mixtapes" for 127.0.0.1 at 2018-10-12 14:35:28 +1100
+Processing by MixtapesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N8akrHYCXJoJjpGS8Oh19GhzwNonJh7TgL4hJFIX4wOLlWbMQAFXXRw6P7+Kcqzptx/q+HMkqCB7abjAhaL+xg==", "mixtape"=>{"name"=>"proper name", "image"=>"http://placekitten.com/400/400"}, "commit"=>"Create Mixtape"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[36mMixtape Create (0.4ms)[0m  [1m[32mINSERT INTO "mixtapes" ("name", "image", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "proper name"], ["image", "http://placekitten.com/400/400"], ["created_at", "2018-10-12 03:35:28.616102"], ["updated_at", "2018-10-12 03:35:28.616102"], ["user_id", 15]]
+  ↳ app/controllers/mixtapes_controller.rb:24
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/mixtapes_controller.rb:24
+Redirected to http://localhost:3000/mixtapes
+Completed 302 Found in 44ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 14:35:28 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  [1m[36mMixtape Load (0.6ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ app/views/mixtapes/index.html.erb:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  Rendered mixtapes/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/mixtapes/20" for 127.0.0.1 at 2018-10-12 14:35:30 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:47
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/mixtapes/20/edit" for 127.0.0.1 at 2018-10-12 14:37:02 +1100
+Processing by MixtapesController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:53
+  Rendering mixtapes/edit.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.8ms)
+  Rendered mixtapes/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 44ms (Views: 17.9ms | ActiveRecord: 8.6ms)
+
+
+Started PATCH "/mixtapes/20" for 127.0.0.1 at 2018-10-12 14:37:13 +1100
+Processing by MixtapesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yJjNqzbZen+850TiHccYyngucyxzNlDAaxKZw4jWjV90yw/LANpxuKlT6s9nXcHXp0JZDic05jOQxQAnX2OQmg==", "mixtape"=>{"name"=>"p", "image"=>"http://placekitten.com/400/400"}, "commit"=>"Update Mixtape", "id"=>"20"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:57
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:66
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:66
+Redirected to http://localhost:3000/mixtapes/20
+Completed 302 Found in 22ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/mixtapes/20" for 127.0.0.1 at 2018-10-12 14:37:13 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:49
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mMixtape Load (0.4ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" ORDER BY "mixtapes"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMixtape Update (0.4ms)[0m  [1m[33mUPDATE "mixtapes" SET "name" = $1, "updated_at" = $2 WHERE "mixtapes"."id" = $3[0m  [["name", "t"], ["updated_at", "2018-10-12 03:38:06.685115"], ["id", 13]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" ORDER BY "mixtapes"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/mixtapes/20/edit" for 127.0.0.1 at 2018-10-12 14:47:43 +1100
+Processing by MixtapesController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:53
+  Rendering mixtapes/edit.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.7ms)
+  Rendered mixtapes/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 53ms (Views: 23.7ms | ActiveRecord: 10.9ms)
+
+
+Started PATCH "/mixtapes/20" for 127.0.0.1 at 2018-10-12 14:48:02 +1100
+Processing by MixtapesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"homvC1v5/gyWs0IcaVsjy/+rXEUbvQmLycThXlwJxsk62m1rbfr1y4MH7DETwfrWIMd2Z0+/v3gyE3i6i7zbDA==", "mixtape"=>{"name"=>"p", "image"=>"http://placekitten.com/500/500"}, "commit"=>"Update Mixtape", "id"=>"20"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:57
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:68
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:68
+  Rendering mixtapes/edit.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.4ms)
+  Rendered mixtapes/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 16.7ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/mixtapes/20" for 127.0.0.1 at 2018-10-12 14:48:22 +1100
+Processing by MixtapesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hdSrDju/sEsCO7PgoiEwmvw+5P7CPIpuCwZCcMkhhdA5h2luDby7jBePHc3Yu+mHI1LO3JY+PJ3w0duUHpSYFQ==", "mixtape"=>{"name"=>"this will work", "image"=>"http://placekitten.com/500/500"}, "commit"=>"Update Mixtape", "id"=>"20"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:57
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:68
+  [1m[36mMixtape Update (0.4ms)[0m  [1m[33mUPDATE "mixtapes" SET "name" = $1, "image" = $2, "updated_at" = $3 WHERE "mixtapes"."id" = $4[0m  [["name", "this will work"], ["image", "http://placekitten.com/500/500"], ["updated_at", "2018-10-12 03:48:22.476961"], ["id", 20]]
+  ↳ app/controllers/mixtapes_controller.rb:68
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/mixtapes_controller.rb:68
+Redirected to http://localhost:3000/mixtapes/20
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/mixtapes/20" for 127.0.0.1 at 2018-10-12 14:48:22 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:49
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mixtapes/20" for 127.0.0.1 at 2018-10-12 14:51:17 +1100
+Processing by MixtapesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:49
+  Rendering mixtapes/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/show.html.erb:3
+  Rendered mixtapes/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 62ms (Views: 34.9ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-12 14:51:22 +1100
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 41ms (Views: 37.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/mixtapes/20" for 127.0.0.1 at 2018-10-12 14:54:33 +1100
+Processing by MixtapesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"homvC1v5/gyWs0IcaVsjy/+rXEUbvQmLycThXlwJxsk62m1rbfr1y4MH7DETwfrWIMd2Z0+/v3gyE3i6i7zbDA==", "mixtape"=>{"name"=>"p", "image"=>"http://placekitten.com/500/500"}, "commit"=>"Update Mixtape", "id"=>"20"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.3ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:57
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:68
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:68
+  Rendering mixtapes/edit.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (3.1ms)
+  Rendered mixtapes/edit.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 82ms (Views: 31.7ms | ActiveRecord: 7.6ms)
+
+
+Started PUT "/__web_console/repl_sessions/65ca253a833497d96efd7c34c0c3476b" for 127.0.0.1 at 2018-10-12 14:55:38 +1100
+Started PUT "/__web_console/repl_sessions/65ca253a833497d96efd7c34c0c3476b" for 127.0.0.1 at 2018-10-12 14:55:39 +1100
+Started PUT "/__web_console/repl_sessions/65ca253a833497d96efd7c34c0c3476b" for 127.0.0.1 at 2018-10-12 14:55:42 +1100
+Started PUT "/__web_console/repl_sessions/65ca253a833497d96efd7c34c0c3476b" for 127.0.0.1 at 2018-10-12 14:55:43 +1100
+Started PUT "/__web_console/repl_sessions/65ca253a833497d96efd7c34c0c3476b" for 127.0.0.1 at 2018-10-12 14:56:00 +1100
+Started PUT "/__web_console/repl_sessions/65ca253a833497d96efd7c34c0c3476b" for 127.0.0.1 at 2018-10-12 14:56:01 +1100
+Started PUT "/__web_console/repl_sessions/65ca253a833497d96efd7c34c0c3476b" for 127.0.0.1 at 2018-10-12 14:56:22 +1100
+Started PUT "/__web_console/repl_sessions/65ca253a833497d96efd7c34c0c3476b" for 127.0.0.1 at 2018-10-12 14:56:23 +1100
+Started PUT "/__web_console/repl_sessions/65ca253a833497d96efd7c34c0c3476b" for 127.0.0.1 at 2018-10-12 14:56:25 +1100
+Started PUT "/__web_console/repl_sessions/65ca253a833497d96efd7c34c0c3476b" for 127.0.0.1 at 2018-10-12 14:56:28 +1100
+Started PUT "/__web_console/repl_sessions/65ca253a833497d96efd7c34c0c3476b" for 127.0.0.1 at 2018-10-12 14:56:38 +1100
+Started PUT "/__web_console/repl_sessions/65ca253a833497d96efd7c34c0c3476b" for 127.0.0.1 at 2018-10-12 14:56:43 +1100
+Started PATCH "/mixtapes/20" for 127.0.0.1 at 2018-10-12 14:57:58 +1100
+Processing by MixtapesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"homvC1v5/gyWs0IcaVsjy/+rXEUbvQmLycThXlwJxsk62m1rbfr1y4MH7DETwfrWIMd2Z0+/v3gyE3i6i7zbDA==", "mixtape"=>{"name"=>"p", "image"=>"http://placekitten.com/500/500"}, "commit"=>"Update Mixtape", "id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.1ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:57
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:68
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:68
+  Rendering mixtapes/edit.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.5ms)
+  Rendered mixtapes/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 45ms (Views: 17.3ms | ActiveRecord: 7.4ms)
+
+
+Started PATCH "/mixtapes/20" for 127.0.0.1 at 2018-10-12 14:58:07 +1100
+Processing by MixtapesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"homvC1v5/gyWs0IcaVsjy/+rXEUbvQmLycThXlwJxsk62m1rbfr1y4MH7DETwfrWIMd2Z0+/v3gyE3i6i7zbDA==", "mixtape"=>{"name"=>"p", "image"=>"http://placekitten.com/500/500"}, "commit"=>"Update Mixtape", "id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.1ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:57
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mixtapes_controller.rb:68
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/mixtapes_controller.rb:68
+  Rendering mixtapes/edit.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (2.0ms)
+  Rendered mixtapes/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 36ms (Views: 18.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mixtapes/20/edit" for 127.0.0.1 at 2018-10-12 14:58:43 +1100
+Processing by MixtapesController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT  "mixtapes".* FROM "mixtapes" WHERE "mixtapes"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/mixtapes_controller.rb:53
+  Rendering mixtapes/edit.html.erb within layouts/application
+  Rendered mixtapes/_form.html.erb (1.6ms)
+  Rendered mixtapes/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mixtapes" for 127.0.0.1 at 2018-10-12 14:58:46 +1100
+Processing by MixtapesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  Rendering mixtapes/index.html.erb within layouts/application
+  [1m[36mMixtape Load (0.2ms)[0m  [1m[34mSELECT "mixtapes".* FROM "mixtapes"[0m
+  ↳ app/views/mixtapes/index.html.erb:4
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/mixtapes/index.html.erb:7
+  Rendered mixtapes/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.6ms)
+
+

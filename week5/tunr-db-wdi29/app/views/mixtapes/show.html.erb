@@ -1,0 +1,18 @@
+<h2><%= @mixtape.name %></h2>
+
+Created by <%= @mixtape.user.name %>
+<br>
+<% if @mixtape.image.present? %>
+  <%= image_tag @mixtape.image, class: 'mixtapeCover' %>
+<% end %>
+<br>
+
+<!--
+   Only show the edit link if the user who created the current
+   mixtape *is* the currently logged-in user, i.e.:
+   1. is someone logged in?
+   2. is that someone the same person as the owner of the mixtape?
+ -->
+<% if @current_user.present? && @mixtape.user == @current_user %>
+  <%= link_to 'Edit Mixtape', edit_mixtape_path(@mixtape)  %>
+<% end %>

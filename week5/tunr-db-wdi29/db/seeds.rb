@@ -92,3 +92,6 @@ u2 = User.create name: 'Linna', email: 'linna@ga.co', password: 'chicken'
 u3 = User.create name: 'Mikki', email: 'mikaela@ga.co', password: 'chicken'
 
 puts "Created #{User.all.length} users."
+
+u1.mixtapes << m1 << m2
+u2.mixtapes << m3

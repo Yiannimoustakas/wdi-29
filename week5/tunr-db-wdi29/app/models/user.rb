@@ -5,6 +5,8 @@ class User < ApplicationRecord
   # (requires the 'bcrypt' gem)
   has_secure_password   # makes 'password' field MANDATORY
 
+  has_many :mixtapes
+
   validates :email, presence: true, uniqueness: true
 
 end
