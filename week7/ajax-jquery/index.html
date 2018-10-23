@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Movie Search</h1>
+
+   <form id="searchForm">
+      <input type="text" id="query" placeholder="Enter a movie query"
+      value="alien">
+      <button>Search</button>
+   </form>
+
+
+   <div id="resultsContainer">
+     <h2>Search Results</h2>
+     <ul id="searchResults"></ul>
+   </div>
+
+    <div id="detailsContainer">
+      <br>
+      <a href="#" id="backToSearchResults"> &lt;&lt; Back to Results</a>
+      <br>
+
+      <h2>Movie Details</h2>
+
+      <div class="title">
+        <strong>Title:</strong>
+        <span></span>
+      </div>
+
+      <div class="tagline">
+        <strong>Tagline:</strong>
+        <span></span>
+      </div>
+
+      <div class="vote">
+        <strong>Vote average:</strong>
+        <span></span>
+      </div>
+
+      <div class="overview">
+        <strong>Overview:</strong>
+        <span></span>
+      </div>
+
+
+      <div class="genres">
+        <strong>Genres:</strong>
+        <span></span>
+      </div>
+
+
+
+    </div>
+
+</body>
+</html>
