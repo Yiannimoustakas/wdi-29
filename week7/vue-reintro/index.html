@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue ReVuew</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Vue ReVue</h1>
+
+  <div id="app">
+
+   Message: {{message}}
+
+   <br>
+
+   <input type="text" v-model="message">
+
+   <br>
+
+   <dogs-form></dogs-form>
+
+   <ul>
+     <li v-for="dog in dogs">
+       {{dog.name}} ({{dog.age}})
+     </li>
+   </ul>
+
+
+  </div>
+
+  <script src="js/vue.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

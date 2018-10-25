@@ -12,6 +12,8 @@ $(document).ready( () => {
   // to submit the search, as soon as the page loads)
   $('#searchText').focus();
 
+  // some comment AGAIN
+
   $searchResultsDiv = $('#searchResults');  // Set the value using jQuery, once the DOM has loaded
 
   // Add a keypress handler to let us hide the fullscreen

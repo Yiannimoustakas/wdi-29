@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  # get 'dashboard/uptime'
-  # get 'dashboard/cpu_hog'
-  # get 'dashboard/app'
+  # get 'dogs/create'
+  # get 'dogs/index'
+  # get 'dogs/show'
+  resources :dogs, only: [:create, :index, :show]
 
   get '/app' => 'dashboard#app'
   get '/uptime' => 'dashboard#uptime'

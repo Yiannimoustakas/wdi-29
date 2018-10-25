@@ -1,0 +1,11 @@
+li.result {
+  cursor: pointer;
+}
+
+li.result:hover {
+  color: red;
+}
+
+#resultsContainer, #detailsContainer {
+  display: none;
+}
