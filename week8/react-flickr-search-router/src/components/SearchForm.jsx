@@ -3,13 +3,23 @@ import { Link } from 'react-router-dom';
 
 class SearchForm extends Component {
 
+  constructor(){
+    super();
+
+    this.state = {
+      query: ''
+    }
+  }
+
   handleInput( event ){
     console.log( event.target.value );
+
+    this.setState({ query: event.target.value });
   }
 
   handleSubmit( event ){
     event.preventDefault(); // prevent form submit from causing reload of page
-    this.props.history.push('/search/my search query here');
+    this.props.history.push(`/search/${ this.state.query }`);
   }
 
   render(){
