@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+import ajax from '@/lib/ajax';  // all our axios requests now happen in this library file
 export default {
   name: 'FlightSearchResults',
   props: ['origin', 'destination'],
@@ -35,7 +35,8 @@ export default {
     // runs when the component is added to the DOM,
     // like React's componentDidMount()
 
-    axios.get(`http://localhost:3000/search/${this.origin}/${this.destination}`)
+    // axios.get(`http://localhost:3000/search/${this.origin}/${this.destination}`)
+    ajax.getFlightSearchResults(this.origin, this.destination)
     .then( response => {
       console.log( response );
       this.flights = response.data;   // like React's "this.setState({ flights: response.data });"

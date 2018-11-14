@@ -9,8 +9,8 @@
 </template>
 
 <script>
-  import axios from 'axios';
-  const SERVER_AUTH_TOKEN_URL = 'http://localhost:3000/user_token';
+  import ajax from '@/lib/ajax';  // all our axios requests now happen in this library file
+  import axios from 'axios'; /// we still need this so we can set the auth header
 
   export default {
     name: 'Login',
@@ -24,16 +24,16 @@
     methods: {
       doLogin(){
         console.log('doLogin()', this.email, this.password);
-        axios.post(SERVER_AUTH_TOKEN_URL, {
-          auth: { email: this.email, password: this.password }
-        })
+
+        // axios.post(SERVER_AUTH_TOKEN_URL, {
+        ajax.performLogin(this.email, this.password)
         .then( response => {
           console.log('response:', response.data.jwt );
 
-          // We need to add the token to the axios headers here EVEN THOUGH we do it happens in the
+          // We need to add the token to the axios headers here EVEN THOUGH we do it in the
           // created() method of the App component too; we need it here because the App component
           // is already mounted by now, so its created() method has already run (so if we don't
-          // do it first here, we won't actually have the header set after we redirect to the
+          // do it first here, we won't actually have the auth header set after we redirect to the
           // search page).
           // We WILL already have the header set when we reload the page and the App component mounts again.
           axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.jwt}`;
