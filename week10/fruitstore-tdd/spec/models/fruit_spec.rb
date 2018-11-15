@@ -32,7 +32,9 @@ RSpec.describe Fruit, type: :model do
       pear = Fruit.find @pear.id
 
       expect( pear.class ).to eq Pear
+      expect( pear ).to be_a Pear  # another way of writing the above
       expect( pear.is_a?(Fruit) ).to eq true
+      expect( pear ).to be_a Fruit  # another way of writing the above
       expect( pear.class.ancestors ).to include Fruit
     end
 

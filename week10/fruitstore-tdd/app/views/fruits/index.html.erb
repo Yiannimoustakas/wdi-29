@@ -1,3 +1,9 @@
-<h1>Fruits#index</h1>
+<div id="heading">
+  <h1>Fruits Index</h1>
+</div>
 
-<p>Placeholder</p>
+<ul>
+<%= @fruits.each do |fruit| %>
+  <li class="item"><%= fruit.name %></li>
+<% end %>
+<ul>
