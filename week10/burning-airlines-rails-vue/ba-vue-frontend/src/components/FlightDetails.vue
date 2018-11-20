@@ -2,10 +2,10 @@
 <div>
   <h2>Flight Details</h2>
 
-  <div v-if="flight.id">
+  <div v-if="flight.origin">
 
     <div><strong>Date:</strong>: {{ flight.departure_date_formatted }}</div>
-    <div><strong>Number</strong>: {{ flight.flight_number }}</div>
+    <div><strong>Number</strong>: {{ flight.flight_number }}</div><!-- Needs to be flight.id for Rails; changed for MongoDB -->
     <div><strong>Plane</strong>: {{ flight.plane.name }}</div>
     <div><strong>Origin</strong>: {{ flight.origin }}</div>
     <div><strong>Destination</strong>: {{ flight.destination }}</div>
@@ -66,7 +66,7 @@
       reserveSeat(row, col){
         console.log('reserveSeat():', row, col);
 
-        ajax.makeBooking(row, col, this.flight.id)
+        ajax.makeBooking(row, col, this.flight.flight_number) // THIS SHOULD BE .id for RAILS! Changed it for MongoDB backend
         .then( res => {
           console.log('success:', res);
           // update user_reservations lookup so the seat changes colour in the diagram

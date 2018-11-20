@@ -10,7 +10,7 @@
     <div>Destination</div>
   </div>
 
-  <div class="container flightRow" v-for="flight in flights" v-on:click="gotoFlightDetails(flight.id)">
+  <div class="container flightRow" v-for="flight in flights" v-on:click="gotoFlightDetails(flight.flight_number)">
     <div>{{ flight.departure_date_formatted }}</div>
     <div>{{ flight.flight_number }}</div>
     <div>{{ flight.plane.name }}</div>
