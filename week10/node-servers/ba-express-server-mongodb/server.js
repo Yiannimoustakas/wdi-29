@@ -20,6 +20,15 @@ const server = app.listen(3000, () => {
   console.log('Server listening on port 3000...');
 });
 
+// Export the server object after we start it, so we can
+// require() this server file from inside our test suite
+module.exports = server;
+
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
 // GET /flights  (list of all flights in table)
 app.get('/flights', (req, res) => {
   db.collection('flights').find().toArray( (err, results) => {
