@@ -10,7 +10,7 @@ class GitHubProfile extends Component {
 
     this.state = {
       user: {},
-      repos: {}
+      repos: []
     };
 
   }
@@ -22,16 +22,22 @@ class GitHubProfile extends Component {
     // get user info
     axios.get(`https://api.github.com/users/${username}?client_id=4ec1b8f9c149f7c46ffd&client_secret=a05ec287c29ebd9633131b5a08298530709130e9`)
     .then( response => {
-      console.log( response.data );
+      console.log( 'user info', response.data );
       this.setState({ user: response.data });
+
     })
     .catch( console.warn );
 
-    // get user repos
-    // https://api.github.com/users/${username}/repos?client_id=4ec1b8f9c149f7c46ffd&client_secret=a05ec287c29ebd9633131b5a08298530709130e9
+    // get user repos (this request is independent of the first request, and will run in parallel)
+    axios.get(`https://api.github.com/users/${username}/repos?client_id=4ec1b8f9c149f7c46ffd&client_secret=a05ec287c29ebd9633131b5a08298530709130e9`)
+    .then( response => {
+      console.log( 'repos', response.data );
+      this.setState({ repos: response.data });
+    })
+    .catch( console.warn );
 
 
-  }
+  } // componentDidMount()
 
 
   render(){
@@ -50,6 +56,32 @@ class GitHubProfile extends Component {
   }
 
 } // class GitHubProfile
+
+const UserRepos = props => {
+
+  if( !props.repos.length ){
+    return <p>Loading...</p>;
+  }
+
+  console.log('props.repos is:', props.repos);
+
+  // const liTags = [];
+  // for( let i = 0; i < props.repos.length; i++ ){
+  //   const r = props.repos[i];
+  //   liTags.push( <li>{ r.name }</li> );
+  // }
+
+  // const liTags = props.repos.map( r => <li>{ r.name }</li> );
+
+  return (
+    <div>
+      <h3>User Repos</h3>
+      <ul>
+        { props.repos.map( r => <li><a href={ r.html_url }>{ r.name }</a></li> ) }
+      </ul>
+    </div>
+  );
+};
 
 const UserStats = props => {
 
