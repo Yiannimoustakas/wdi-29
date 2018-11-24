@@ -3,9 +3,11 @@ var app = app || {};
 app.step =  0;
 
 app.controls = {
-  rotationSpeed: 0.05,
-  bouncingSpeed: 0.02,
-  cubeX: 0
+  rotationSpeed: 0.01,
+  bouncingSpeed: 0.1,
+  cubeX: 0,
+  numParticles: 1000000,
+  particleDistribution: 200
 };
 
 app.init = function(){
@@ -14,7 +16,7 @@ app.init = function(){
   app.gui = new dat.GUI();
   app.gui.add( app.controls, 'rotationSpeed', 0, 0.5 );
   app.gui.add( app.controls, 'cubeX', -50, 50 );
-  app.gui.add( app.controls, 'bouncingSpeed', 0, 2 );
+  app.gui.add( app.controls, 'bouncingSpeed', -0.5, 0.5 );
 
 
   // The scene keeps track of all the objects we're rendering,
@@ -39,18 +41,36 @@ app.init = function(){
 
 
   // Add visible x,y,z guides to the scene
-  app.axes = new THREE.AxesHelper( 40 );
-  app.scene.add(  app.axes );
+  // app.axes = new THREE.AxesHelper( 40 );
+  // app.scene.add(  app.axes );
 
 
-  app.plane = app.createPlane();
-  app.scene.add( app.plane );
+  // app.plane = app.createPlane();
+  // app.scene.add( app.plane );
 
-  app.cube = app.createCube();
-  app.scene.add( app.cube );
+  const numCubes = 1;
+  app.cubes = [];
+  for( let i = 0; i < numCubes; i++ ){
+    const cube = app.createCube(
+      THREE.Math.randInt(-500, 500),
+      THREE.Math.randInt(-500, 500),
+      THREE.Math.randInt(-500, 500)
+    );
+    app.cubes.push( cube );
+    app.scene.add( cube );
+  }
+  // app.cube = app.createCube();
+  // app.scene.add( app.cube );
 
   app.spotlight = app.createSpotlight();
   app.scene.add( app.spotlight );
+
+  // Ambient light will light everything in the scene
+  // in the same way (non-directional)
+
+  app.ambient = new THREE.AmbientLight( 0x666666 );
+  app.scene.add( app.ambient );
+
   //
   // app.spotlightHelper = new THREE.SpotLightHelper( app.spotlight );
   // app.scene.add( app.spotlightHelper );
@@ -58,14 +78,18 @@ app.init = function(){
   app.sphere = app.createSphere();
   app.scene.add( app.sphere );
 
+  app.particleSystem = app.createParticleSystem();
+  app.scene.add( app.particleSystem );
+
+
   // The renderer calculates how to draw all the objects in the scene, based on the lighting and
   // camera perspective.... and renders it all down to a 2D image to show in a <canvas> element
   // in the browser
   app.renderer = new THREE.WebGLRenderer();
   app.renderer.setSize( app.width, app.height );
   app.renderer.setClearColor( 0x000000 ); // background colour
-  app.renderer.shadowMap.enabled = true; // shadows are expensive to calculate, thus disabled by default
-  app.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  // app.renderer.shadowMap.enabled = true; // shadows are expensive to calculate, thus disabled by default
+  // app.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
   // Attach the renderer's <canvas> element into the DOM inside our output DIV
   document.getElementById('output').appendChild( app.renderer.domElement );
@@ -73,6 +97,7 @@ app.init = function(){
 
   app.mouseControls = new THREE.OrbitControls( app.camera, app.renderer.domElement );
 
+  app.stats = app.addStats();
 
   // Actually calculate what the scene looks like right now, based on the camera position
   // (and update the canvas with this image)
@@ -82,3 +107,28 @@ app.init = function(){
 
 // Vanilla JS version of jQuery's $(document).ready( app.init );
 window.onload = app.init;
+
+app.resize = function(){
+  app.width = window.innerWidth;
+  app.height = window.innerHeight;
+
+  app.camera.aspect = app.width/app.height;
+  app.camera.updateProjectionMatrix();
+
+  app.renderer.setSize( app.width, app.height );
+};
+
+window.addEventListener( 'resize', app.resize );
+
+
+app.addStats = function(){
+  const stats = new Stats();
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+
+  document.getElementById('stats').appendChild( stats.domElement );
+
+  return stats;
+};
